@@ -49,10 +49,24 @@ As per the standards of TLS1.3, Elliptic Curve certificates were generated using
 	  }
 	\item{The \emph{"Version"} parameter in all the hello requests is set as "TLS 1.2 (0x0303)" as mentioned in Section 4.1.2 \& Apendix D of RFC 8446 for backward compatibility.}
 	\item{To re-establish the identities without the use of certificates after the PMKSA duration has expired, hostApd and wpa\_supplicant negotiated a \emph{Pre-Shared Key}.}
-	\item{For subsequent negotiations, the ``client\_hello" requests had a \emph{pre\_shared\_key} extension that contained the 32 byte PSK Identity. The total time between EAP-request and EAP-success in this scenario was found to be averaging 0.1414 sec where it was 0.1903 seconds without a pre-shared key.  }
+	\item{For subsequent negotiations, the ``client\_hello" requests had a \emph{pre\_shared\_key} extension that contained the 32 byte PSK Identity. The total time between EAP request and EAP success in this scenario was found to be averaging 0.1414 sec where it was 0.1903 seconds without a pre-shared key.  }
 	\item{After the successful renegotiation and EAP success state, there were a total of 4 EAPOL messages for PMK and 2 EAPOL messages for GMK}
-	\item{Talk about PMK and GMK. Also about the hello retry request'sha as per original rfc guideline }
+
 	
+\end{enumerate}
+
+\section{FreeRadius TLS 1.3 behavior}
+
+\begin{enumerate}
+	\item{The default key share algorithm of FreeRadius is \emph{secp256r1}. As the ``client\_hello" requests have key share algorithm of \emph{x25519}, it means that FreeRadius sends a ``Hello Retry Request - Change Cipher Spec response. "}
+	\item{The ``Change Cipher Spec" response in this case, contains ``Random" value as: \\   
+		\qquad CF 21 AD 74 E5 9A 61 11 BE 1D 8C 02 1E 65 B8 91 \\
+		C2 A2 11 16 7A BB 8C 5E 07 9E 09 E2 C8 A8 33 9C \\
+		This is the SHA256 of ``HelloRetry" and matches the original RFC8446 guidelines of retry requests.
+		
+	 }
+	\item{Following the ``Hello Retry Request", wpa\_suplicant responds with fresh ``Client\_Hello" with key share algorithm as ``secp256r1". Freeradius then proceeds to authenticate the supplicant using TLS1.3.  }
+	\item{The average time for a successful negotiation in FreeRadius was 0.145 seconds. This includes the time delay due to an extra hello retry request.}
 \end{enumerate}
 
 \section{Burning Questions!}
