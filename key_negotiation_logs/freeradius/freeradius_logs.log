@@ -1,0 +1,1704 @@
+Mon Feb 17 17:11:28 2020 : Debug: Server was built with: 
+Mon Feb 17 17:11:28 2020 : Debug:   accounting               : yes
+Mon Feb 17 17:11:28 2020 : Debug:   authentication           : yes
+Mon Feb 17 17:11:28 2020 : Debug:   ascend-binary-attributes : yes
+Mon Feb 17 17:11:28 2020 : Debug:   coa                      : yes
+Mon Feb 17 17:11:28 2020 : Debug:   control-socket           : yes
+Mon Feb 17 17:11:28 2020 : Debug:   detail                   : yes
+Mon Feb 17 17:11:28 2020 : Debug:   dhcp                     : yes
+Mon Feb 17 17:11:28 2020 : Debug:   dynamic-clients          : yes
+Mon Feb 17 17:11:28 2020 : Debug:   osfc2                    : no
+Mon Feb 17 17:11:28 2020 : Debug:   proxy                    : yes
+Mon Feb 17 17:11:28 2020 : Debug:   regex-pcre               : no
+Mon Feb 17 17:11:28 2020 : Debug:   regex-posix              : yes
+Mon Feb 17 17:11:28 2020 : Debug:   regex-posix-extended     : yes
+Mon Feb 17 17:11:28 2020 : Debug:   session-management       : yes
+Mon Feb 17 17:11:28 2020 : Debug:   stats                    : yes
+Mon Feb 17 17:11:28 2020 : Debug:   systemd                  : no
+Mon Feb 17 17:11:28 2020 : Debug:   tcp                      : yes
+Mon Feb 17 17:11:28 2020 : Debug:   threads                  : yes
+Mon Feb 17 17:11:28 2020 : Debug:   tls                      : yes
+Mon Feb 17 17:11:28 2020 : Debug:   unlang                   : yes
+Mon Feb 17 17:11:28 2020 : Debug:   vmps                     : yes
+Mon Feb 17 17:11:28 2020 : Debug:   developer                : no
+Mon Feb 17 17:11:28 2020 : Debug: Server core libs:
+Mon Feb 17 17:11:28 2020 : Debug:   freeradius-server        : 3.0.20
+Mon Feb 17 17:11:28 2020 : Debug:   talloc                   : 2.0.*
+Mon Feb 17 17:11:28 2020 : Debug:   ssl                      : 1.1.1d release
+Mon Feb 17 17:11:28 2020 : Debug: Endianness:
+Mon Feb 17 17:11:28 2020 : Debug:   little
+Mon Feb 17 17:11:28 2020 : Debug: Compilation flags:
+Mon Feb 17 17:11:28 2020 : Debug:   cppflags : 
+Mon Feb 17 17:11:28 2020 : Debug:   cflags   : -I. -Isrc -include src/freeradius-devel/autoconf.h -include src/freeradius-devel/build.h -include src/freeradius-devel/features.h -include src/freeradius-devel/radpaths.h -fno-strict-aliasing -Wno-date-time -g -O2 -Wall -std=c99 -D_GNU_SOURCE -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -DOPENSSL_NO_KRB5 -DNDEBUG -DIS_MODULE=1
+Mon Feb 17 17:11:28 2020 : Debug:   ldflags  :  
+Mon Feb 17 17:11:28 2020 : Debug:   libs     : -lcrypto -lssl -ltalloc -latomic -lnsl -lresolv -ldl -lpthread 
+Mon Feb 17 17:11:28 2020 : Debug:   
+Mon Feb 17 17:11:28 2020 : Info: FreeRADIUS Version 3.0.20
+Mon Feb 17 17:11:28 2020 : Info: Copyright (C) 1999-2019 The FreeRADIUS server project and contributors
+Mon Feb 17 17:11:28 2020 : Info: There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+Mon Feb 17 17:11:28 2020 : Info: PARTICULAR PURPOSE
+Mon Feb 17 17:11:28 2020 : Info: You may redistribute copies of FreeRADIUS under the terms of the
+Mon Feb 17 17:11:28 2020 : Info: GNU General Public License
+Mon Feb 17 17:11:28 2020 : Info: For more information about these matters, see the file named COPYRIGHT
+Mon Feb 17 17:11:28 2020 : Info: Starting - reading configuration files ...
+Mon Feb 17 17:11:28 2020 : Debug: including dictionary file /usr/local/share/freeradius/dictionary
+Mon Feb 17 17:11:28 2020 : Debug: including dictionary file /usr/local/share/freeradius/dictionary.dhcp
+Mon Feb 17 17:11:28 2020 : Debug: including dictionary file /usr/local/share/freeradius/dictionary.vqp
+Mon Feb 17 17:11:28 2020 : Debug: including dictionary file /usr/local/etc/raddb/dictionary
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/radiusd.conf
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/proxy.conf
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/clients.conf
+Mon Feb 17 17:11:28 2020 : Debug: including files in directory /usr/local/etc/raddb/mods-enabled/
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/sradutmp
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/date
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/dynamic_clients
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/unix
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/replicate
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/radutmp
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/unpack
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/chap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/expr
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/eap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/ntlm_auth
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/expiration
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/pap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/cache_eap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/linelog
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/preprocess
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/passwd
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/mschap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/logintime
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/detail
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/soh
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/utf8
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/exec
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/echo
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/files
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/mods-enabled/digest
+Mon Feb 17 17:11:28 2020 : Debug: including files in directory /usr/local/etc/raddb/policy.d/
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/canonicalization
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/rfc7542
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/debug
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/control
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/moonshot-targeted-ids
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/abfab-tr
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/accounting
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/eap
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/operator-name
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/cui
+Mon Feb 17 17:11:28 2020 : Debug: OPTIMIZING (${policy.cui_require_operator_name} == yes) --> FALSE
+Mon Feb 17 17:11:28 2020 : Debug: OPTIMIZING (no == yes) --> FALSE
+Mon Feb 17 17:11:28 2020 : Debug: OPTIMIZING (${policy.cui_require_operator_name} == yes) --> FALSE
+Mon Feb 17 17:11:28 2020 : Debug: OPTIMIZING (no == yes) --> FALSE
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/dhcp
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/policy.d/filter
+Mon Feb 17 17:11:28 2020 : Debug: including files in directory /usr/local/etc/raddb/sites-enabled/
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/sites-enabled/inner-tunnel
+Mon Feb 17 17:11:28 2020 : Debug: including configuration file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:11:28 2020 : Debug: main {
+Mon Feb 17 17:11:28 2020 : Debug:  security {
+Mon Feb 17 17:11:28 2020 : Debug:  	allow_core_dumps = no
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[527]: The item 'max_attributes' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[545]: The item 'reject_delay' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[565]: The item 'status_server' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[575]: The item 'allow_vulnerable_openssl' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug: 	name = "radiusd"
+Mon Feb 17 17:11:28 2020 : Debug: 	prefix = "/usr/local"
+Mon Feb 17 17:11:28 2020 : Debug: 	localstatedir = "/usr/local/var"
+Mon Feb 17 17:11:28 2020 : Debug: 	logdir = "/usr/local/var/log/radius"
+Mon Feb 17 17:11:28 2020 : Debug: 	run_dir = "/usr/local/var/run/radiusd"
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[97]: The item 'confdir' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[104]: The item 'db_dir' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[138]: The item 'libdir' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[149]: The item 'pidfile' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[170]: The item 'correct_escapes' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[224]: The item 'max_request_time' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[243]: The item 'cleanup_delay' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[280]: The item 'hostname_lookups' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[383]: The item 'checkrad' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[594]: The item 'proxy_requests' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: main {
+Mon Feb 17 17:11:28 2020 : Debug: 	name = "radiusd"
+Mon Feb 17 17:11:28 2020 : Debug: 	prefix = "/usr/local"
+Mon Feb 17 17:11:28 2020 : Debug: 	localstatedir = "/usr/local/var"
+Mon Feb 17 17:11:28 2020 : Debug: 	sbindir = "/usr/local/sbin"
+Mon Feb 17 17:11:28 2020 : Debug: 	logdir = "/usr/local/var/log/radius"
+Mon Feb 17 17:11:28 2020 : Debug: 	run_dir = "/usr/local/var/run/radiusd"
+Mon Feb 17 17:11:28 2020 : Debug: 	libdir = "/usr/local/lib"
+Mon Feb 17 17:11:28 2020 : Debug: 	radacctdir = "/usr/local/var/log/radius/radacct"
+Mon Feb 17 17:11:28 2020 : Debug: 	hostname_lookups = no
+Mon Feb 17 17:11:28 2020 : Debug: 	max_request_time = 30
+Mon Feb 17 17:11:28 2020 : Debug: 	cleanup_delay = 5
+Mon Feb 17 17:11:28 2020 : Debug: 	max_requests = 16384
+Mon Feb 17 17:11:28 2020 : Debug: 	pidfile = "/usr/local/var/run/radiusd/radiusd.pid"
+Mon Feb 17 17:11:28 2020 : Debug: 	checkrad = "/usr/local/sbin/checkrad"
+Mon Feb 17 17:11:28 2020 : Debug: 	debug_level = 0
+Mon Feb 17 17:11:28 2020 : Debug: 	proxy_requests = yes
+Mon Feb 17 17:11:28 2020 : Debug:  log {
+Mon Feb 17 17:11:28 2020 : Debug:  	stripped_names = no
+Mon Feb 17 17:11:28 2020 : Debug:  	auth = no
+Mon Feb 17 17:11:28 2020 : Debug:  	auth_badpass = no
+Mon Feb 17 17:11:28 2020 : Debug:  	auth_goodpass = no
+Mon Feb 17 17:11:28 2020 : Debug:  	colourise = yes
+Mon Feb 17 17:11:28 2020 : Debug:  	msg_denied = "You are already logged in - access denied"
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[298]: The item 'destination' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[315]: The item 'file' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[323]: The item 'syslog_facility' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  resources {
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  security {
+Mon Feb 17 17:11:28 2020 : Debug:  	max_attributes = 200
+Mon Feb 17 17:11:28 2020 : Debug:  	reject_delay = 1.000000
+Mon Feb 17 17:11:28 2020 : Debug:  	status_server = yes
+Mon Feb 17 17:11:28 2020 : Debug:  	allow_vulnerable_openssl = "no"
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[97]: The item 'confdir' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[104]: The item 'db_dir' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Warning: /usr/local/etc/raddb/radiusd.conf[170]: The item 'correct_escapes' is defined, but is unused by the configuration
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: radiusd: #### Loading Realms and Home Servers ####
+Mon Feb 17 17:11:28 2020 : Debug:  proxy server {
+Mon Feb 17 17:11:28 2020 : Debug:  	retry_delay = 5
+Mon Feb 17 17:11:28 2020 : Debug:  	retry_count = 3
+Mon Feb 17 17:11:28 2020 : Debug:  	default_fallback = no
+Mon Feb 17 17:11:28 2020 : Debug:  	dead_time = 120
+Mon Feb 17 17:11:28 2020 : Debug:  	wake_all_if_all_dead = no
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  home_server localhost {
+Mon Feb 17 17:11:28 2020 : Debug:  	ipaddr = 127.0.0.1
+Mon Feb 17 17:11:28 2020 : Debug:  	port = 1812
+Mon Feb 17 17:11:28 2020 : Debug:  	type = "auth"
+Mon Feb 17 17:11:28 2020 : Debug:  	secret = "testing123"
+Mon Feb 17 17:11:28 2020 : Debug:  	response_window = 20.000000
+Mon Feb 17 17:11:28 2020 : Debug:  	response_timeouts = 1
+Mon Feb 17 17:11:28 2020 : Debug:  	max_outstanding = 65536
+Mon Feb 17 17:11:28 2020 : Debug:  	zombie_period = 40
+Mon Feb 17 17:11:28 2020 : Debug:  	status_check = "status-server"
+Mon Feb 17 17:11:28 2020 : Debug:  	ping_interval = 30
+Mon Feb 17 17:11:28 2020 : Debug:  	check_interval = 30
+Mon Feb 17 17:11:28 2020 : Debug:  	check_timeout = 4
+Mon Feb 17 17:11:28 2020 : Debug:  	num_answers_to_alive = 3
+Mon Feb 17 17:11:28 2020 : Debug:  	revive_interval = 120
+Mon Feb 17 17:11:28 2020 : Debug:   limit {
+Mon Feb 17 17:11:28 2020 : Debug:   	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:   	max_requests = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	idle_timeout = 0
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   coa {
+Mon Feb 17 17:11:28 2020 : Debug:   	irt = 2
+Mon Feb 17 17:11:28 2020 : Debug:   	mrt = 16
+Mon Feb 17 17:11:28 2020 : Debug:   	mrc = 5
+Mon Feb 17 17:11:28 2020 : Debug:   	mrd = 30
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  home_server_pool my_auth_failover {
+Mon Feb 17 17:11:28 2020 : Debug: 	type = fail-over
+Mon Feb 17 17:11:28 2020 : Debug: 	home_server = localhost
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  realm example.com {
+Mon Feb 17 17:11:28 2020 : Debug: 	auth_pool = my_auth_failover
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug:  realm LOCAL {
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug: radiusd: #### Loading Clients ####
+Mon Feb 17 17:11:28 2020 : Debug:  client localhost {
+Mon Feb 17 17:11:28 2020 : Debug:  	ipaddr = 0.0.0.0/0
+Mon Feb 17 17:11:28 2020 : Debug:  	require_message_authenticator = no
+Mon Feb 17 17:11:28 2020 : Debug:  	secret = "noob1234"
+Mon Feb 17 17:11:28 2020 : Debug:  	nas_type = "other"
+Mon Feb 17 17:11:28 2020 : Debug:  	proto = "*"
+Mon Feb 17 17:11:28 2020 : Debug:   limit {
+Mon Feb 17 17:11:28 2020 : Debug:   	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:   	lifetime = 100
+Mon Feb 17 17:11:28 2020 : Debug:   	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug: Adding client 0.0.0.0/0 (0.0.0.0) to prefix tree 0
+Mon Feb 17 17:11:28 2020 : Debug:  client localhost_ipv6 {
+Mon Feb 17 17:11:28 2020 : Debug:  	ipv6addr = ::1
+Mon Feb 17 17:11:28 2020 : Debug:  	require_message_authenticator = no
+Mon Feb 17 17:11:28 2020 : Debug:  	secret = "testing123"
+Mon Feb 17 17:11:28 2020 : Debug:   limit {
+Mon Feb 17 17:11:28 2020 : Debug:   	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:   	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:  }
+Mon Feb 17 17:11:28 2020 : Debug: Adding client ::1/128 (::1) to prefix tree 128
+Mon Feb 17 17:11:28 2020 : Info: Debugger not attached
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = mschap
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = eap
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = PAP
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = CHAP
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = MS-CHAP
+Mon Feb 17 17:11:28 2020 : Debug:  # Creating Auth-Type = digest
+Mon Feb 17 17:11:28 2020 : Debug: radiusd: #### Instantiating modules ####
+Mon Feb 17 17:11:28 2020 : Debug:  modules {
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_always with path: /usr/local/lib/rlm_always.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_always, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_always
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "reject" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always reject {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "reject"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "fail" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always fail {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "fail"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "ok" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always ok {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "ok"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "handled" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always handled {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "handled"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "invalid" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always invalid {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "invalid"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "userlock" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always userlock {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "userlock"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "notfound" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always notfound {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "notfound"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "noop" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always noop {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "noop"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "updated" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   always updated {
+Mon Feb 17 17:11:28 2020 : Debug:   	rcode = "updated"
+Mon Feb 17 17:11:28 2020 : Debug:   	simulcount = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	mpp = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_radutmp with path: /usr/local/lib/rlm_radutmp.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_radutmp, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_radutmp
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "sradutmp" from file /usr/local/etc/raddb/mods-enabled/sradutmp
+Mon Feb 17 17:11:28 2020 : Debug:   radutmp sradutmp {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/sradutmp"
+Mon Feb 17 17:11:28 2020 : Debug:   	username = "%{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	case_sensitive = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	check_with_nas = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 420
+Mon Feb 17 17:11:28 2020 : Debug:   	caller_id = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_date with path: /usr/local/lib/rlm_date.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_date, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_date
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "date" from file /usr/local/etc/raddb/mods-enabled/date
+Mon Feb 17 17:11:28 2020 : Debug:   date {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "%b %e %Y %H:%M:%S %Z"
+Mon Feb 17 17:11:28 2020 : Debug:   	utc = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "wispr2date" from file /usr/local/etc/raddb/mods-enabled/date
+Mon Feb 17 17:11:28 2020 : Debug:   date wispr2date {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "%Y-%m-%dT%H:%M:%S"
+Mon Feb 17 17:11:28 2020 : Debug:   	utc = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_dynamic_clients with path: /usr/local/lib/rlm_dynamic_clients.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_dynamic_clients, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_dynamic_clients
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "dynamic_clients" from file /usr/local/etc/raddb/mods-enabled/dynamic_clients
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_unix with path: /usr/local/lib/rlm_unix.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_unix, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_unix
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "unix" from file /usr/local/etc/raddb/mods-enabled/unix
+Mon Feb 17 17:11:28 2020 : Debug:   unix {
+Mon Feb 17 17:11:28 2020 : Debug:   	radwtmp = "/usr/local/var/log/radius/radwtmp"
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Creating attribute Unix-Group
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_replicate with path: /usr/local/lib/rlm_replicate.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_replicate, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_replicate
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "replicate" from file /usr/local/etc/raddb/mods-enabled/replicate
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_attr_filter with path: /usr/local/lib/rlm_attr_filter.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_attr_filter, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "attr_filter.post-proxy" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter attr_filter.post-proxy {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/attr_filter/post-proxy"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{Realm}"
+Mon Feb 17 17:11:28 2020 : Debug:   	relaxed = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "attr_filter.pre-proxy" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter attr_filter.pre-proxy {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/attr_filter/pre-proxy"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{Realm}"
+Mon Feb 17 17:11:28 2020 : Debug:   	relaxed = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "attr_filter.access_reject" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter attr_filter.access_reject {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/attr_filter/access_reject"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	relaxed = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "attr_filter.access_challenge" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter attr_filter.access_challenge {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/attr_filter/access_challenge"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	relaxed = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "attr_filter.accounting_response" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter attr_filter.accounting_response {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/attr_filter/accounting_response"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	relaxed = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "radutmp" from file /usr/local/etc/raddb/mods-enabled/radutmp
+Mon Feb 17 17:11:28 2020 : Debug:   radutmp {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radutmp"
+Mon Feb 17 17:11:28 2020 : Debug:   	username = "%{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	case_sensitive = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	check_with_nas = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	caller_id = yes
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_unpack with path: /usr/local/lib/rlm_unpack.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_unpack, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_unpack
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "unpack" from file /usr/local/etc/raddb/mods-enabled/unpack
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_chap with path: /usr/local/lib/rlm_chap.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_chap, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_chap
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "chap" from file /usr/local/etc/raddb/mods-enabled/chap
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_expr with path: /usr/local/lib/rlm_expr.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_expr, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_expr
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "expr" from file /usr/local/etc/raddb/mods-enabled/expr
+Mon Feb 17 17:11:28 2020 : Debug:   expr {
+Mon Feb 17 17:11:28 2020 : Debug:   	safe_characters = "@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_: /äéöüàâæçèéêëîïôœùûüaÿÄÉÖÜßÀÂÆÇÈÉÊËÎÏÔŒÙÛÜŸ"
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_eap with path: /usr/local/lib/rlm_eap.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_eap, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_eap
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "eap" from file /usr/local/etc/raddb/mods-enabled/eap
+Mon Feb 17 17:11:28 2020 : Debug:   eap {
+Mon Feb 17 17:11:28 2020 : Debug:   	default_eap_type = "tls"
+Mon Feb 17 17:11:28 2020 : Debug:   	timer_expire = 60
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_unknown_eap_types = no
+Mon Feb 17 17:11:28 2020 : Debug:   	cisco_accounting_username_bug = no
+Mon Feb 17 17:11:28 2020 : Debug:   	max_sessions = 16384
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_exec with path: /usr/local/lib/rlm_exec.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_exec, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_exec
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "ntlm_auth" from file /usr/local/etc/raddb/mods-enabled/ntlm_auth
+Mon Feb 17 17:11:28 2020 : Debug:   exec ntlm_auth {
+Mon Feb 17 17:11:28 2020 : Debug:   	wait = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	program = "/path/to/ntlm_auth --request-nt-key --domain=MYDOMAIN --username=%{mschap:User-Name} --password=%{User-Password}"
+Mon Feb 17 17:11:28 2020 : Debug:   	shell_escape = yes
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_realm with path: /usr/local/lib/rlm_realm.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_realm, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "IPASS" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   realm IPASS {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "prefix"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = "/"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_default = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_null = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "suffix" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   realm suffix {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "suffix"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = "@"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_default = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_null = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "bangpath" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   realm bangpath {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "prefix"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = "!"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_default = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_null = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "realmpercent" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   realm realmpercent {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "suffix"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = "%"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_default = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_null = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "ntdomain" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   realm ntdomain {
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "prefix"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = "\\"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_default = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_null = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_expiration with path: /usr/local/lib/rlm_expiration.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_expiration, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_expiration
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "expiration" from file /usr/local/etc/raddb/mods-enabled/expiration
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_pap with path: /usr/local/lib/rlm_pap.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_pap, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_pap
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "pap" from file /usr/local/etc/raddb/mods-enabled/pap
+Mon Feb 17 17:11:28 2020 : Debug:   pap {
+Mon Feb 17 17:11:28 2020 : Debug:   	normalise = yes
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_cache with path: /usr/local/lib/rlm_cache.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_cache, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_cache
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "cache_eap" from file /usr/local/etc/raddb/mods-enabled/cache_eap
+Mon Feb 17 17:11:28 2020 : Debug:   cache cache_eap {
+Mon Feb 17 17:11:28 2020 : Debug:   	driver = "rlm_cache_rbtree"
+Mon Feb 17 17:11:28 2020 : Debug:   	key = "%{%{control:State}:-%{%{reply:State}:-%{State}}}"
+Mon Feb 17 17:11:28 2020 : Debug:   	ttl = 15
+Mon Feb 17 17:11:28 2020 : Debug:   	max_entries = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	epoch = 0
+Mon Feb 17 17:11:28 2020 : Debug:   	add_stats = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_linelog with path: /usr/local/lib/rlm_linelog.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_linelog, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_linelog
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "linelog" from file /usr/local/etc/raddb/mods-enabled/linelog
+Mon Feb 17 17:11:28 2020 : Debug:   linelog {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/linelog"
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	syslog_severity = "info"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "This is a log message for %{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	reference = "messages.%{%{reply:Packet-Type}:-default}"
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "log_accounting" from file /usr/local/etc/raddb/mods-enabled/linelog
+Mon Feb 17 17:11:28 2020 : Debug:   linelog log_accounting {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/linelog-accounting"
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	syslog_severity = "info"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	format = ""
+Mon Feb 17 17:11:28 2020 : Debug:   	reference = "Accounting-Request.%{%{Acct-Status-Type}:-unknown}"
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_preprocess with path: /usr/local/lib/rlm_preprocess.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_preprocess, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_preprocess
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "preprocess" from file /usr/local/etc/raddb/mods-enabled/preprocess
+Mon Feb 17 17:11:28 2020 : Debug:   preprocess {
+Mon Feb 17 17:11:28 2020 : Debug:   	huntgroups = "/usr/local/etc/raddb/mods-config/preprocess/huntgroups"
+Mon Feb 17 17:11:28 2020 : Debug:   	hints = "/usr/local/etc/raddb/mods-config/preprocess/hints"
+Mon Feb 17 17:11:28 2020 : Debug:   	with_ascend_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ascend_channels_per_line = 23
+Mon Feb 17 17:11:28 2020 : Debug:   	with_ntdomain_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:   	with_specialix_jetstream_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:   	with_cisco_vsa_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:   	with_alvarion_vsa_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_passwd with path: /usr/local/lib/rlm_passwd.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_passwd, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_passwd
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "etc_passwd" from file /usr/local/etc/raddb/mods-enabled/passwd
+Mon Feb 17 17:11:28 2020 : Debug:   passwd etc_passwd {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/etc/passwd"
+Mon Feb 17 17:11:28 2020 : Debug:   	format = "*User-Name:Crypt-Password:"
+Mon Feb 17 17:11:28 2020 : Debug:   	delimiter = ":"
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_nislike = no
+Mon Feb 17 17:11:28 2020 : Debug:   	ignore_empty = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	allow_multiple_keys = no
+Mon Feb 17 17:11:28 2020 : Debug:   	hash_size = 100
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_mschap with path: /usr/local/lib/rlm_mschap.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_mschap, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_mschap
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "mschap" from file /usr/local/etc/raddb/mods-enabled/mschap
+Mon Feb 17 17:11:28 2020 : Debug:   mschap {
+Mon Feb 17 17:11:28 2020 : Debug:   	use_mppe = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	require_encryption = no
+Mon Feb 17 17:11:28 2020 : Debug:   	require_strong = no
+Mon Feb 17 17:11:28 2020 : Debug:   	with_ntdomain_hack = yes
+Mon Feb 17 17:11:28 2020 : Debug:    passchange {
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   	allow_retry = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	winbind_retry_with_normalised_username = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_logintime with path: /usr/local/lib/rlm_logintime.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_logintime, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_logintime
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "logintime" from file /usr/local/etc/raddb/mods-enabled/logintime
+Mon Feb 17 17:11:28 2020 : Debug:   logintime {
+Mon Feb 17 17:11:28 2020 : Debug:   	minimum_timeout = 60
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_detail with path: /usr/local/lib/rlm_detail.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_detail, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_detail
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "detail" from file /usr/local/etc/raddb/mods-enabled/detail
+Mon Feb 17 17:11:28 2020 : Debug:   detail {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radacct/%{%{Packet-Src-IP-Address}:-%{Packet-Src-IPv6-Address}}/detail-%Y%m%d"
+Mon Feb 17 17:11:28 2020 : Debug:   	header = "%t"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	locking = no
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	log_packet_header = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_soh with path: /usr/local/lib/rlm_soh.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_soh, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_soh
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "soh" from file /usr/local/etc/raddb/mods-enabled/soh
+Mon Feb 17 17:11:28 2020 : Debug:   soh {
+Mon Feb 17 17:11:28 2020 : Debug:   	dhcp = yes
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_utf8 with path: /usr/local/lib/rlm_utf8.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_utf8, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_utf8
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "utf8" from file /usr/local/etc/raddb/mods-enabled/utf8
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "exec" from file /usr/local/etc/raddb/mods-enabled/exec
+Mon Feb 17 17:11:28 2020 : Debug:   exec {
+Mon Feb 17 17:11:28 2020 : Debug:   	wait = no
+Mon Feb 17 17:11:28 2020 : Debug:   	input_pairs = "request"
+Mon Feb 17 17:11:28 2020 : Debug:   	shell_escape = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	timeout = 10
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "echo" from file /usr/local/etc/raddb/mods-enabled/echo
+Mon Feb 17 17:11:28 2020 : Debug:   exec echo {
+Mon Feb 17 17:11:28 2020 : Debug:   	wait = yes
+Mon Feb 17 17:11:28 2020 : Debug:   	program = "/bin/echo %{User-Name}"
+Mon Feb 17 17:11:28 2020 : Debug:   	input_pairs = "request"
+Mon Feb 17 17:11:28 2020 : Debug:   	output_pairs = "reply"
+Mon Feb 17 17:11:28 2020 : Debug:   	shell_escape = yes
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_files with path: /usr/local/lib/rlm_files.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_files, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_files
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "files" from file /usr/local/etc/raddb/mods-enabled/files
+Mon Feb 17 17:11:28 2020 : Debug:   files {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/etc/raddb/mods-config/files/authorize"
+Mon Feb 17 17:11:28 2020 : Debug:   	acctusersfile = "/usr/local/etc/raddb/mods-config/files/accounting"
+Mon Feb 17 17:11:28 2020 : Debug:   	preproxy_usersfile = "/usr/local/etc/raddb/mods-config/files/pre-proxy"
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "auth_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   detail auth_log {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radacct/%{%{Packet-Src-IP-Address}:-%{Packet-Src-IPv6-Address}}/auth-detail-%Y%m%d"
+Mon Feb 17 17:11:28 2020 : Debug:   	header = "%t"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	locking = no
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	log_packet_header = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "reply_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   detail reply_log {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radacct/%{%{Packet-Src-IP-Address}:-%{Packet-Src-IPv6-Address}}/reply-detail-%Y%m%d"
+Mon Feb 17 17:11:28 2020 : Debug:   	header = "%t"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	locking = no
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	log_packet_header = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "pre_proxy_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   detail pre_proxy_log {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radacct/%{%{Packet-Src-IP-Address}:-%{Packet-Src-IPv6-Address}}/pre-proxy-detail-%Y%m%d"
+Mon Feb 17 17:11:28 2020 : Debug:   	header = "%t"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	locking = no
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	log_packet_header = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "post_proxy_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   detail post_proxy_log {
+Mon Feb 17 17:11:28 2020 : Debug:   	filename = "/usr/local/var/log/radius/radacct/%{%{Packet-Src-IP-Address}:-%{Packet-Src-IPv6-Address}}/post-proxy-detail-%Y%m%d"
+Mon Feb 17 17:11:28 2020 : Debug:   	header = "%t"
+Mon Feb 17 17:11:28 2020 : Debug:   	permissions = 384
+Mon Feb 17 17:11:28 2020 : Debug:   	locking = no
+Mon Feb 17 17:11:28 2020 : Debug:   	escape_filenames = no
+Mon Feb 17 17:11:28 2020 : Debug:   	log_packet_header = no
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_digest with path: /usr/local/lib/rlm_digest.so
+Mon Feb 17 17:11:28 2020 : Debug: Loaded rlm_digest, checking if it's valid
+Mon Feb 17 17:11:28 2020 : Debug:   # Loaded module rlm_digest
+Mon Feb 17 17:11:28 2020 : Debug:   # Loading module "digest" from file /usr/local/etc/raddb/mods-enabled/digest
+Mon Feb 17 17:11:28 2020 : Debug:   instantiate {
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "reject" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "fail" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "ok" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "handled" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "invalid" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "userlock" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "notfound" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "noop" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "updated" from file /usr/local/etc/raddb/mods-enabled/always
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "attr_filter.post-proxy" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/attr_filter/post-proxy
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "attr_filter.pre-proxy" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/attr_filter/pre-proxy
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "attr_filter.access_reject" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/attr_filter/access_reject
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "attr_filter.access_challenge" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/attr_filter/access_challenge
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "attr_filter.accounting_response" from file /usr/local/etc/raddb/mods-enabled/attr_filter
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/attr_filter/accounting_response
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "eap" from file /usr/local/etc/raddb/mods-enabled/eap
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_eap_tls with path: /usr/local/lib/rlm_eap_tls.so
+Mon Feb 17 17:11:28 2020 : Debug:    # Linked to sub-module rlm_eap_tls
+Mon Feb 17 17:11:28 2020 : Debug:    tls {
+Mon Feb 17 17:11:28 2020 : Debug:    	tls = "tls-common"
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:    tls-config tls-common {
+Mon Feb 17 17:11:28 2020 : Debug:    	verify_depth = 0
+Mon Feb 17 17:11:28 2020 : Debug:    	ca_path = "/usr/local/etc/raddb/certs"
+Mon Feb 17 17:11:28 2020 : Debug:    	pem_file_type = yes
+Mon Feb 17 17:11:28 2020 : Debug:    	private_key_file = "/usr/local/etc/raddb/certs/ecdsa_certs/server.key"
+Mon Feb 17 17:11:28 2020 : Debug:    	certificate_file = "/usr/local/etc/raddb/certs/ecdsa_certs/server.crt"
+Mon Feb 17 17:11:28 2020 : Debug:    	ca_file = "/usr/local/etc/raddb/certs/ecdsa_certs/cert.pem"
+Mon Feb 17 17:11:28 2020 : Debug:    	dh_file = "/usr/local/etc/raddb/certs/dh"
+Mon Feb 17 17:11:28 2020 : Debug:    	fragment_size = 4000
+Mon Feb 17 17:11:28 2020 : Debug:    	include_length = yes
+Mon Feb 17 17:11:28 2020 : Debug:    	auto_chain = yes
+Mon Feb 17 17:11:28 2020 : Debug:    	check_crl = no
+Mon Feb 17 17:11:28 2020 : Debug:    	check_all_crl = no
+Mon Feb 17 17:11:28 2020 : Debug:    	cipher_list = "DEFAULT"
+Mon Feb 17 17:11:28 2020 : Debug:    	cipher_server_preference = no
+Mon Feb 17 17:11:28 2020 : Debug:    	ecdh_curve = "prime256v1"
+Mon Feb 17 17:11:28 2020 : Debug:    	tls_max_version = "1.3"
+Mon Feb 17 17:11:28 2020 : Debug:    	tls_min_version = "1.3"
+Mon Feb 17 17:11:28 2020 : Debug:     cache {
+Mon Feb 17 17:11:28 2020 : Debug:     	enable = no
+Mon Feb 17 17:11:28 2020 : Debug:     	lifetime = 24
+Mon Feb 17 17:11:28 2020 : Debug:     	max_entries = 255
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     verify {
+Mon Feb 17 17:11:28 2020 : Debug:     	skip_if_ocsp_ok = no
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     ocsp {
+Mon Feb 17 17:11:28 2020 : Debug:     	enable = no
+Mon Feb 17 17:11:28 2020 : Debug:     	override_cert_url = yes
+Mon Feb 17 17:11:28 2020 : Debug:     	url = "http://127.0.0.1/ocsp/"
+Mon Feb 17 17:11:28 2020 : Debug:     	use_nonce = yes
+Mon Feb 17 17:11:28 2020 : Debug:     	timeout = 0
+Mon Feb 17 17:11:28 2020 : Debug:     	softfail = no
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_eap_ttls with path: /usr/local/lib/rlm_eap_ttls.so
+Mon Feb 17 17:11:28 2020 : Debug:    # Linked to sub-module rlm_eap_ttls
+Mon Feb 17 17:11:28 2020 : Debug:    ttls {
+Mon Feb 17 17:11:28 2020 : Debug:    	tls = "tls-common"
+Mon Feb 17 17:11:28 2020 : Debug:    	default_eap_type = "md5"
+Mon Feb 17 17:11:28 2020 : Debug:    	copy_request_to_tunnel = no
+Mon Feb 17 17:11:28 2020 : Debug:    	use_tunneled_reply = no
+Mon Feb 17 17:11:28 2020 : Debug:    	virtual_server = "inner-tunnel"
+Mon Feb 17 17:11:28 2020 : Debug:    	include_length = yes
+Mon Feb 17 17:11:28 2020 : Debug:    	require_client_cert = no
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: tls: Using cached TLS configuration from previous invocation
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_eap_peap with path: /usr/local/lib/rlm_eap_peap.so
+Mon Feb 17 17:11:28 2020 : Debug:    # Linked to sub-module rlm_eap_peap
+Mon Feb 17 17:11:28 2020 : Debug:    peap {
+Mon Feb 17 17:11:28 2020 : Debug:    	tls = "tls-common"
+Mon Feb 17 17:11:28 2020 : Debug:    	default_eap_type = "mschapv2"
+Mon Feb 17 17:11:28 2020 : Debug:    	copy_request_to_tunnel = no
+Mon Feb 17 17:11:28 2020 : Debug:    	use_tunneled_reply = no
+Mon Feb 17 17:11:28 2020 : Debug:    	proxy_tunneled_request_as_eap = yes
+Mon Feb 17 17:11:28 2020 : Debug:    	virtual_server = "inner-tunnel"
+Mon Feb 17 17:11:28 2020 : Debug:    	soh = no
+Mon Feb 17 17:11:28 2020 : Debug:    	require_client_cert = no
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: tls: Using cached TLS configuration from previous invocation
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_eap_mschapv2 with path: /usr/local/lib/rlm_eap_mschapv2.so
+Mon Feb 17 17:11:28 2020 : Debug:    # Linked to sub-module rlm_eap_mschapv2
+Mon Feb 17 17:11:28 2020 : Debug:    mschapv2 {
+Mon Feb 17 17:11:28 2020 : Debug:    	with_ntdomain_hack = no
+Mon Feb 17 17:11:28 2020 : Debug:    	send_error = no
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "IPASS" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "suffix" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "bangpath" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "realmpercent" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "ntdomain" from file /usr/local/etc/raddb/mods-enabled/realm
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "expiration" from file /usr/local/etc/raddb/mods-enabled/expiration
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "pap" from file /usr/local/etc/raddb/mods-enabled/pap
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "cache_eap" from file /usr/local/etc/raddb/mods-enabled/cache_eap
+Mon Feb 17 17:11:28 2020 : Debug: Loading rlm_cache_rbtree with path: /usr/local/lib/rlm_cache_rbtree.so
+Mon Feb 17 17:11:28 2020 : Debug: rlm_cache (cache_eap): Driver rlm_cache_rbtree (module rlm_cache_rbtree) loaded and linked
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "linelog" from file /usr/local/etc/raddb/mods-enabled/linelog
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "log_accounting" from file /usr/local/etc/raddb/mods-enabled/linelog
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "preprocess" from file /usr/local/etc/raddb/mods-enabled/preprocess
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/preprocess/huntgroups
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/preprocess/hints
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "etc_passwd" from file /usr/local/etc/raddb/mods-enabled/passwd
+Mon Feb 17 17:11:28 2020 : Debug: rlm_passwd: nfields: 3 keyfield 0(User-Name) listable: no
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "mschap" from file /usr/local/etc/raddb/mods-enabled/mschap
+Mon Feb 17 17:11:28 2020 : Debug: rlm_mschap (mschap): using internal authentication
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "logintime" from file /usr/local/etc/raddb/mods-enabled/logintime
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "detail" from file /usr/local/etc/raddb/mods-enabled/detail
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "files" from file /usr/local/etc/raddb/mods-enabled/files
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/files/authorize
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/files/accounting
+Mon Feb 17 17:11:28 2020 : Debug: reading pairlist file /usr/local/etc/raddb/mods-config/files/pre-proxy
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "auth_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug: rlm_detail (auth_log): 'User-Password' suppressed, will not appear in detail output
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "reply_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "pre_proxy_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:   # Instantiating module "post_proxy_log" from file /usr/local/etc/raddb/mods-enabled/detail.log
+Mon Feb 17 17:11:28 2020 : Debug:  } # modules
+Mon Feb 17 17:11:28 2020 : Debug: radiusd: #### Loading Virtual Servers ####
+Mon Feb 17 17:11:28 2020 : Debug: server { # from file /usr/local/etc/raddb/radiusd.conf
+Mon Feb 17 17:11:28 2020 : Debug: } # server
+Mon Feb 17 17:11:28 2020 : Debug: server inner-tunnel { # from file /usr/local/etc/raddb/sites-enabled/inner-tunnel
+Mon Feb 17 17:11:28 2020 : Debug:  authenticate {
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    pap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    chap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    mschap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   mschap
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:  } # authenticate
+Mon Feb 17 17:11:28 2020 : Debug:  authorize {
+Mon Feb 17 17:11:28 2020 : Debug:   policy filter_username {
+Mon Feb 17 17:11:28 2020 : Debug:    if (&User-Name) {
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ / /) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: User-Name contains whitespace'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@[^@]*@/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Multiple @ in User-Name'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /\.\./) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: User-Name contains multiple ..s'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@/ && !&User-Name =~ /@(.+)\.(.+)$/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm does not have at least one dot separator'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /\.$/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm ends with a dot'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@\./) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm begins with a dot'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   chap
+Mon Feb 17 17:11:28 2020 : Debug:   mschap
+Mon Feb 17 17:11:28 2020 : Debug:   suffix
+Mon Feb 17 17:11:28 2020 : Debug:   update {
+Mon Feb 17 17:11:28 2020 : Debug:    &control:Proxy-To-Realm := LOCAL
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:   files
+Mon Feb 17 17:11:28 2020 : Warning: Ignoring "sql" (see raddb/mods-available/README.rst)
+Mon Feb 17 17:11:28 2020 : Warning: Ignoring "ldap" (see raddb/mods-available/README.rst)
+Mon Feb 17 17:11:28 2020 : Debug:   expiration
+Mon Feb 17 17:11:28 2020 : Debug:   logintime
+Mon Feb 17 17:11:28 2020 : Debug:   pap
+Mon Feb 17 17:11:28 2020 : Debug:  } # authorize
+Mon Feb 17 17:11:28 2020 : Debug:  session {
+Mon Feb 17 17:11:28 2020 : Debug:   radutmp
+Mon Feb 17 17:11:28 2020 : Debug:  } # session
+Mon Feb 17 17:11:28 2020 : Debug:  post-proxy {
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:  } # post-proxy
+Mon Feb 17 17:11:28 2020 : Debug:  post-auth {
+Mon Feb 17 17:11:28 2020 : Info:  # Skipping contents of 'if' as it is always 'false' -- /usr/local/etc/raddb/sites-enabled/inner-tunnel:336
+Mon Feb 17 17:11:28 2020 : Debug:   if (false) {
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    attr_filter.access_reject
+Mon Feb 17 17:11:28 2020 : Debug:    update {
+Mon Feb 17 17:11:28 2020 : Debug:     &outer.session-state:Module-Failure-Message := &Module-Failure-Message
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:  } # post-auth
+Mon Feb 17 17:11:28 2020 : Debug: } # server inner-tunnel
+Mon Feb 17 17:11:28 2020 : Debug: server default { # from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:11:28 2020 : Debug:  authenticate {
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    pap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    chap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    mschap
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   mschap
+Mon Feb 17 17:11:28 2020 : Debug:   digest
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:  } # authenticate
+Mon Feb 17 17:11:28 2020 : Debug:  authorize {
+Mon Feb 17 17:11:28 2020 : Debug:   policy filter_username {
+Mon Feb 17 17:11:28 2020 : Debug:    if (&User-Name) {
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ / /) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: User-Name contains whitespace'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@[^@]*@/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Multiple @ in User-Name'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /\.\./) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: User-Name contains multiple ..s'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@/ && !&User-Name =~ /@(.+)\.(.+)$/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm does not have at least one dot separator'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /\.$/) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm ends with a dot'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     if (&User-Name =~ /@\./) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &Module-Failure-Message += 'Rejected: Realm begins with a dot'
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:      reject
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   preprocess
+Mon Feb 17 17:11:28 2020 : Debug:   chap
+Mon Feb 17 17:11:28 2020 : Debug:   mschap
+Mon Feb 17 17:11:28 2020 : Debug:   digest
+Mon Feb 17 17:11:28 2020 : Debug:   suffix
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:   files
+Mon Feb 17 17:11:28 2020 : Debug:   expiration
+Mon Feb 17 17:11:28 2020 : Debug:   logintime
+Mon Feb 17 17:11:28 2020 : Debug:   pap
+Mon Feb 17 17:11:28 2020 : Debug:  } # authorize
+Mon Feb 17 17:11:28 2020 : Debug:  preacct {
+Mon Feb 17 17:11:28 2020 : Debug:   preprocess
+Mon Feb 17 17:11:28 2020 : Debug:   policy acct_unique {
+Mon Feb 17 17:11:28 2020 : Debug:    update {
+Mon Feb 17 17:11:28 2020 : Debug:     &Tmp-String-9 := "ai:"
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:    if ("%{hex:&Class}" =~ /^%{hex:&Tmp-String-9}/ && "%{string:&Class}" =~ /^ai:([0-9a-f]{32})/) {
+Mon Feb 17 17:11:28 2020 : Debug:     update {
+Mon Feb 17 17:11:28 2020 : Debug:      &Acct-Unique-Session-Id := "%{md5:%{1},%{Acct-Session-ID}}"
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:    else {
+Mon Feb 17 17:11:28 2020 : Debug:     update {
+Mon Feb 17 17:11:28 2020 : Debug:      &Acct-Unique-Session-Id := "%{md5:%{User-Name},%{Acct-Session-ID},%{%{NAS-IPv6-Address}:-%{NAS-IP-Address}},%{NAS-Identifier},%{NAS-Port-ID},%{NAS-Port}}"
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   suffix
+Mon Feb 17 17:11:28 2020 : Debug:   files
+Mon Feb 17 17:11:28 2020 : Debug:  } # preacct
+Mon Feb 17 17:11:28 2020 : Debug:  accounting {
+Mon Feb 17 17:11:28 2020 : Debug:   detail
+Mon Feb 17 17:11:28 2020 : Debug:   unix
+Mon Feb 17 17:11:28 2020 : Debug:   exec
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter.accounting_response
+Mon Feb 17 17:11:28 2020 : Debug:  } # accounting
+Mon Feb 17 17:11:28 2020 : Debug:  post-proxy {
+Mon Feb 17 17:11:28 2020 : Debug:   post_proxy_log
+Mon Feb 17 17:11:28 2020 : Debug:   attr_filter.post-proxy
+Mon Feb 17 17:11:28 2020 : Debug:   eap
+Mon Feb 17 17:11:28 2020 : Debug:  } # post-proxy
+Mon Feb 17 17:11:28 2020 : Debug:  post-auth {
+Mon Feb 17 17:11:28 2020 : Debug:   if (&session-state:User-Name && &reply:User-Name && &User-Name && &reply:User-Name == &User-Name) {
+Mon Feb 17 17:11:28 2020 : Debug:    update {
+Mon Feb 17 17:11:28 2020 : Debug:     &reply:User-Name !* ANY
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   update {
+Mon Feb 17 17:11:28 2020 : Debug:    &reply:[*] += &session-state:[*]
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   exec
+Mon Feb 17 17:11:28 2020 : Debug:   policy remove_reply_message_if_eap {
+Mon Feb 17 17:11:28 2020 : Debug:    if (&reply:EAP-Message && &reply:Reply-Message) {
+Mon Feb 17 17:11:28 2020 : Debug:     update {
+Mon Feb 17 17:11:28 2020 : Debug:      &reply:Reply-Message !* ANY
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:    else {
+Mon Feb 17 17:11:28 2020 : Debug:     noop
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:    attr_filter.access_reject
+Mon Feb 17 17:11:28 2020 : Debug:    eap
+Mon Feb 17 17:11:28 2020 : Debug:    policy remove_reply_message_if_eap {
+Mon Feb 17 17:11:28 2020 : Debug:     if (&reply:EAP-Message && &reply:Reply-Message) {
+Mon Feb 17 17:11:28 2020 : Debug:      update {
+Mon Feb 17 17:11:28 2020 : Debug:       &reply:Reply-Message !* ANY
+Mon Feb 17 17:11:28 2020 : Debug:      }
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:     else {
+Mon Feb 17 17:11:28 2020 : Debug:      noop
+Mon Feb 17 17:11:28 2020 : Debug:     }
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:   group {
+Mon Feb 17 17:11:28 2020 : Debug:   }
+Mon Feb 17 17:11:28 2020 : Debug:  } # post-auth
+Mon Feb 17 17:11:28 2020 : Debug: } # server default
+Mon Feb 17 17:11:28 2020 : Debug: Created signal pipe.  Read end FD 5, write end FD 6
+Mon Feb 17 17:11:28 2020 : Debug: radiusd: #### Opening IP addresses and Ports ####
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth with path: /usr/local/lib/proto_auth.so
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth failed: /usr/local/lib/proto_auth.so: cannot open shared object file: No such file or directory - No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: Loading library using linker search path(s)
+Mon Feb 17 17:11:28 2020 : Debug: Defaults         : /lib:/usr/lib
+Mon Feb 17 17:11:28 2020 : Debug: Failed with error: proto_auth.so: cannot open shared object file: No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: listen {
+Mon Feb 17 17:11:28 2020 : Debug:   	type = "auth"
+Mon Feb 17 17:11:28 2020 : Debug:   	ipaddr = 127.0.0.1
+Mon Feb 17 17:11:28 2020 : Debug:   	port = 18120
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth with path: /usr/local/lib/proto_auth.so
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth failed: /usr/local/lib/proto_auth.so: cannot open shared object file: No such file or directory - No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: Loading library using linker search path(s)
+Mon Feb 17 17:11:28 2020 : Debug: Defaults         : /lib:/usr/lib
+Mon Feb 17 17:11:28 2020 : Debug: Failed with error: proto_auth.so: cannot open shared object file: No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: listen {
+Mon Feb 17 17:11:28 2020 : Debug:   	type = "auth"
+Mon Feb 17 17:11:28 2020 : Debug:   	ipaddr = *
+Mon Feb 17 17:11:28 2020 : Debug:   	port = 0
+Mon Feb 17 17:11:28 2020 : Debug:    limit {
+Mon Feb 17 17:11:28 2020 : Debug:    	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:    	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:    	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_acct with path: /usr/local/lib/proto_acct.so
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_acct failed: /usr/local/lib/proto_acct.so: cannot open shared object file: No such file or directory - No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: Loading library using linker search path(s)
+Mon Feb 17 17:11:28 2020 : Debug: Defaults         : /lib:/usr/lib
+Mon Feb 17 17:11:28 2020 : Debug: Failed with error: proto_acct.so: cannot open shared object file: No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: listen {
+Mon Feb 17 17:11:28 2020 : Debug:   	type = "acct"
+Mon Feb 17 17:11:28 2020 : Debug:   	ipaddr = *
+Mon Feb 17 17:11:28 2020 : Debug:   	port = 0
+Mon Feb 17 17:11:28 2020 : Debug:    limit {
+Mon Feb 17 17:11:28 2020 : Debug:    	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:    	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:    	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth with path: /usr/local/lib/proto_auth.so
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_auth failed: /usr/local/lib/proto_auth.so: cannot open shared object file: No such file or directory - No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: Loading library using linker search path(s)
+Mon Feb 17 17:11:28 2020 : Debug: Defaults         : /lib:/usr/lib
+Mon Feb 17 17:11:28 2020 : Debug: Failed with error: proto_auth.so: cannot open shared object file: No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: listen {
+Mon Feb 17 17:11:28 2020 : Debug:   	type = "auth"
+Mon Feb 17 17:11:28 2020 : Debug:   	ipv6addr = ::
+Mon Feb 17 17:11:28 2020 : Debug:   	port = 0
+Mon Feb 17 17:11:28 2020 : Debug:    limit {
+Mon Feb 17 17:11:28 2020 : Debug:    	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:    	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:    	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_acct with path: /usr/local/lib/proto_acct.so
+Mon Feb 17 17:11:28 2020 : Debug: Loading proto_acct failed: /usr/local/lib/proto_acct.so: cannot open shared object file: No such file or directory - No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: Loading library using linker search path(s)
+Mon Feb 17 17:11:28 2020 : Debug: Defaults         : /lib:/usr/lib
+Mon Feb 17 17:11:28 2020 : Debug: Failed with error: proto_acct.so: cannot open shared object file: No such file or directory
+Mon Feb 17 17:11:28 2020 : Debug: listen {
+Mon Feb 17 17:11:28 2020 : Debug:   	type = "acct"
+Mon Feb 17 17:11:28 2020 : Debug:   	ipv6addr = ::
+Mon Feb 17 17:11:28 2020 : Debug:   	port = 0
+Mon Feb 17 17:11:28 2020 : Debug:    limit {
+Mon Feb 17 17:11:28 2020 : Debug:    	max_connections = 16
+Mon Feb 17 17:11:28 2020 : Debug:    	lifetime = 0
+Mon Feb 17 17:11:28 2020 : Debug:    	idle_timeout = 30
+Mon Feb 17 17:11:28 2020 : Debug:    }
+Mon Feb 17 17:11:28 2020 : Debug: }
+Mon Feb 17 17:11:28 2020 : Debug: Listening on auth address 127.0.0.1 port 18120 bound to server inner-tunnel
+Mon Feb 17 17:11:28 2020 : Debug: Listening on auth address * port 1812 bound to server default
+Mon Feb 17 17:11:28 2020 : Debug: Listening on acct address * port 1813 bound to server default
+Mon Feb 17 17:11:28 2020 : Debug: Listening on auth address :: port 1812 bound to server default
+Mon Feb 17 17:11:28 2020 : Debug: Listening on acct address :: port 1813 bound to server default
+Mon Feb 17 17:11:28 2020 : Debug: Opened new proxy socket 'proxy address * port 51189'
+Mon Feb 17 17:11:28 2020 : Debug: Listening on proxy address * port 51189
+Mon Feb 17 17:11:28 2020 : Debug: Opened new proxy socket 'proxy address :: port 51128'
+Mon Feb 17 17:11:28 2020 : Debug: Listening on proxy address :: port 51128
+Mon Feb 17 17:11:28 2020 : Info: Ready to process requests
+Mon Feb 17 17:12:10 2020 : Debug: (0) Received Access-Request Id 193 from 130.233.193.123:32931 to 193.234.219.186:1812 length 151
+Mon Feb 17 17:12:10 2020 : Debug: (0)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (0)   NAS-IP-Address = 10.90.90.91
+Mon Feb 17 17:12:10 2020 : Debug: (0)   NAS-Port = 0
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Called-Station-Id = "6C-19-8F-83-C2-80:NOOBLABS"
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Calling-Station-Id = "28-16-AD-C7-03-B2"
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Framed-MTU = 1400
+Mon Feb 17 17:12:10 2020 : Debug: (0)   NAS-Port-Type = Wireless-802.11
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Connect-Info = "CONNECT 0Mbps 802.11a"
+Mon Feb 17 17:12:10 2020 : Debug: (0)   EAP-Message = 0x0200000a01726f686974
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Message-Authenticator = 0xb49f4f666b799ca9bae8a301f94f2b7e
+Mon Feb 17 17:12:10 2020 : Debug: (0) session-state: No State attribute
+Mon Feb 17 17:12:10 2020 : Debug: (0) # Executing section authorize from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (0)   authorize {
+Mon Feb 17 17:12:10 2020 : Debug: (0)     policy filter_username {
+Mon Feb 17 17:12:10 2020 : Debug: (0)       if (&User-Name) {
+Mon Feb 17 17:12:10 2020 : Debug: (0)       if (&User-Name)  -> TRUE
+Mon Feb 17 17:12:10 2020 : Debug: (0)       if (&User-Name)  {
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ / /) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ / /)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /@[^@]*@/ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /\.\./ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /\.\./ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /\.$/)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /\.$/)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /@\./)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (0)         if (&User-Name =~ /@\./)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (0)       } # if (&User-Name)  = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (0)     } # policy filter_username = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [preprocess] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [chap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [mschap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [digest] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (0) suffix: Checking for suffix after "@"
+Mon Feb 17 17:12:10 2020 : Debug: (0) suffix: No '@' in User-Name = "rohit", looking up realm NULL
+Mon Feb 17 17:12:10 2020 : Debug: (0) suffix: No such realm "NULL"
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [suffix] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: Peer sent EAP Response (code 2) ID 0 length 10
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: EAP-Identity reply, returning 'ok' so we can short-circuit the rest of authorize
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authorize]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [eap] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (0)   } # authorize = ok
+Mon Feb 17 17:12:10 2020 : Debug: (0) Found Auth-Type = eap
+Mon Feb 17 17:12:10 2020 : Debug: (0) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (0)   authenticate {
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authenticate]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: Peer sent packet with method EAP Identity (1)
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: Calling submodule eap_tls to process data
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap_tls: Initiating new TLS session
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap_tls: Setting verify mode to require certificate from client
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap_tls: [eaptls start] = request
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: Sending EAP Request (code 1) ID 1 length 6
+Mon Feb 17 17:12:10 2020 : Debug: (0) eap: EAP session adding &reply:State = 0x5ca605e45ca708e6
+Mon Feb 17 17:12:10 2020 : Debug: (0)     modsingle[authenticate]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (0)     [eap] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (0)   } # authenticate = handled
+Mon Feb 17 17:12:10 2020 : Debug: (0) Using Post-Auth-Type Challenge
+Mon Feb 17 17:12:10 2020 : Debug: (0) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Challenge { ... } # empty sub-section is ignored
+Mon Feb 17 17:12:10 2020 : Debug: (0) session-state: Nothing to cache
+Mon Feb 17 17:12:10 2020 : Debug: (0) Sent Access-Challenge Id 193 from 193.234.219.186:1812 to 130.233.193.123:32931 length 0
+Mon Feb 17 17:12:10 2020 : Debug: (0)   EAP-Message = 0x010100060d20
+Mon Feb 17 17:12:10 2020 : Debug: (0)   Message-Authenticator = 0x00000000000000000000000000000000
+Mon Feb 17 17:12:10 2020 : Debug: (0)   State = 0x5ca605e45ca708e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (0) Finished request
+Mon Feb 17 17:12:10 2020 : Debug: Waking up in 4.9 seconds.
+Mon Feb 17 17:12:10 2020 : Debug: (1) Received Access-Request Id 194 from 130.233.193.123:32931 to 193.234.219.186:1812 length 424
+Mon Feb 17 17:12:10 2020 : Debug: (1)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (1)   NAS-IP-Address = 10.90.90.91
+Mon Feb 17 17:12:10 2020 : Debug: (1)   NAS-Port = 0
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Called-Station-Id = "6C-19-8F-83-C2-80:NOOBLABS"
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Calling-Station-Id = "28-16-AD-C7-03-B2"
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Framed-MTU = 1400
+Mon Feb 17 17:12:10 2020 : Debug: (1)   NAS-Port-Type = Wireless-802.11
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Connect-Info = "CONNECT 0Mbps 802.11a"
+Mon Feb 17 17:12:10 2020 : Debug: (1)   EAP-Message = 0x020101070d0016030100fc010000f803037511e75a22a87460c0e680c4ee67366da6df706e48ffa9363ec690b3d30259b100003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000091000b000403000102000a000c000a001d0017001e001900180016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d00020101003300260024001d0020bf1c297d6fb6f326167eab11d9ede68476b37fcda934e19e592a6cef1cf9bf76
+Mon Feb 17 17:12:10 2020 : Debug: (1)   State = 0x5ca605e45ca708e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Message-Authenticator = 0x20f3ae7003074c83366628b4cf0f17d6
+Mon Feb 17 17:12:10 2020 : Debug: (1) session-state: No cached attributes
+Mon Feb 17 17:12:10 2020 : Debug: (1) # Executing section authorize from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (1)   authorize {
+Mon Feb 17 17:12:10 2020 : Debug: (1)     policy filter_username {
+Mon Feb 17 17:12:10 2020 : Debug: (1)       if (&User-Name) {
+Mon Feb 17 17:12:10 2020 : Debug: (1)       if (&User-Name)  -> TRUE
+Mon Feb 17 17:12:10 2020 : Debug: (1)       if (&User-Name)  {
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ / /) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ / /)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /@[^@]*@/ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /\.\./ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /\.\./ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /\.$/)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /\.$/)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /@\./)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (1)         if (&User-Name =~ /@\./)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (1)       } # if (&User-Name)  = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (1)     } # policy filter_username = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [preprocess] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [chap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [mschap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [digest] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (1) suffix: Checking for suffix after "@"
+Mon Feb 17 17:12:10 2020 : Debug: (1) suffix: No '@' in User-Name = "rohit", looking up realm NULL
+Mon Feb 17 17:12:10 2020 : Debug: (1) suffix: No such realm "NULL"
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [suffix] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Peer sent EAP Response (code 2) ID 1 length 263
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: No EAP Start, assuming it's an on-going EAP conversation
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [eap] = updated
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [files] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [expiration] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [logintime] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: calling pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authorize]: returned from pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [pap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (1)   } # authorize = updated
+Mon Feb 17 17:12:10 2020 : Debug: (1) Found Auth-Type = eap
+Mon Feb 17 17:12:10 2020 : Debug: (1) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (1)   authenticate {
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authenticate]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Expiring EAP session with state 0x5ca605e45ca708e6
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Finished EAP session with state 0x5ca605e45ca708e6
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Previous EAP request found for state 0x5ca605e45ca708e6, released from the list
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Peer sent packet with method EAP TLS (13)
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Calling submodule eap_tls to process data
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: Continuing EAP-TLS
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: Peer sent flags ---
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: Got final TLS record fragment (257 bytes)
+Mon Feb 17 17:12:10 2020 : WARNING: (1) eap_tls: Total received TLS record fragments (257 bytes), does not equal indicated TLS record length (0 bytes)
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: [eaptls verify] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: Done initial handshake
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: (other): before SSL initialization
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: before SSL initialization
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: before SSL initialization
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: <<< recv TLS 1.3  [length 00fc] 
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: SSLv3/TLS read client hello
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: >>> send TLS 1.3  [length 0038] 
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: SSLv3/TLS write server hello
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: SSLv3/TLS write change cipher spec
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS_accept: Need to read more data: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS - In Handshake Phase
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: TLS - got 67 bytes of data
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap_tls: [eaptls process] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: Sending EAP Request (code 1) ID 2 length 77
+Mon Feb 17 17:12:10 2020 : Debug: (1) eap: EAP session adding &reply:State = 0x5ca605e45da408e6
+Mon Feb 17 17:12:10 2020 : Debug: (1)     modsingle[authenticate]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (1)     [eap] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (1)   } # authenticate = handled
+Mon Feb 17 17:12:10 2020 : Debug: (1) Using Post-Auth-Type Challenge
+Mon Feb 17 17:12:10 2020 : Debug: (1) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Challenge { ... } # empty sub-section is ignored
+Mon Feb 17 17:12:10 2020 : Debug: (1) session-state: Nothing to cache
+Mon Feb 17 17:12:10 2020 : Debug: (1) Sent Access-Challenge Id 194 from 193.234.219.186:1812 to 130.233.193.123:32931 length 0
+Mon Feb 17 17:12:10 2020 : Debug: (1)   EAP-Message = 0x0102004d0d80000000431603030038020000340303cf21ad74e59a6111be1d8c021e65b891c2a211167abb8c5e079e09e2c8a8339c00130200000c002b00020304003300020017140303000101
+Mon Feb 17 17:12:10 2020 : Debug: (1)   Message-Authenticator = 0x00000000000000000000000000000000
+Mon Feb 17 17:12:10 2020 : Debug: (1)   State = 0x5ca605e45da408e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (1) Finished request
+Mon Feb 17 17:12:10 2020 : Debug: Waking up in 4.9 seconds.
+Mon Feb 17 17:12:10 2020 : Debug: (2) Received Access-Request Id 195 from 130.233.193.123:32931 to 193.234.219.186:1812 length 457
+Mon Feb 17 17:12:10 2020 : Debug: (2)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (2)   NAS-IP-Address = 10.90.90.91
+Mon Feb 17 17:12:10 2020 : Debug: (2)   NAS-Port = 0
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Called-Station-Id = "6C-19-8F-83-C2-80:NOOBLABS"
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Calling-Station-Id = "28-16-AD-C7-03-B2"
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Framed-MTU = 1400
+Mon Feb 17 17:12:10 2020 : Debug: (2)   NAS-Port-Type = Wireless-802.11
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Connect-Info = "CONNECT 0Mbps 802.11a"
+Mon Feb 17 17:12:10 2020 : Debug: (2)   EAP-Message = 0x020201280d00160303011d0100011903037511e75a22a87460c0e680c4ee67366da6df706e48ffa9363ec690b3d30259b100003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff010000b2000b000403000102000a000c000a001d0017001e001900180016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d0002010100330047004500170041046402a38905fc3977d338735982db1673174cef1d38dd5b9a7c64bc11d284255022d380280ad5c29caa7d7349ad5b7d7f62774013da7220b021d200ae221e9b38
+Mon Feb 17 17:12:10 2020 : Debug: (2)   State = 0x5ca605e45da408e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Message-Authenticator = 0xf2733aa761704f4e6e0dd04d5cf463fe
+Mon Feb 17 17:12:10 2020 : Debug: (2) session-state: No cached attributes
+Mon Feb 17 17:12:10 2020 : Debug: (2) # Executing section authorize from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (2)   authorize {
+Mon Feb 17 17:12:10 2020 : Debug: (2)     policy filter_username {
+Mon Feb 17 17:12:10 2020 : Debug: (2)       if (&User-Name) {
+Mon Feb 17 17:12:10 2020 : Debug: (2)       if (&User-Name)  -> TRUE
+Mon Feb 17 17:12:10 2020 : Debug: (2)       if (&User-Name)  {
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ / /) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ / /)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /@[^@]*@/ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /\.\./ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /\.\./ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /\.$/)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /\.$/)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /@\./)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (2)         if (&User-Name =~ /@\./)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (2)       } # if (&User-Name)  = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (2)     } # policy filter_username = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [preprocess] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [chap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [mschap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [digest] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (2) suffix: Checking for suffix after "@"
+Mon Feb 17 17:12:10 2020 : Debug: (2) suffix: No '@' in User-Name = "rohit", looking up realm NULL
+Mon Feb 17 17:12:10 2020 : Debug: (2) suffix: No such realm "NULL"
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [suffix] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Peer sent EAP Response (code 2) ID 2 length 296
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: No EAP Start, assuming it's an on-going EAP conversation
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [eap] = updated
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [files] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [expiration] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [logintime] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: calling pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authorize]: returned from pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [pap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (2)   } # authorize = updated
+Mon Feb 17 17:12:10 2020 : Debug: (2) Found Auth-Type = eap
+Mon Feb 17 17:12:10 2020 : Debug: (2) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (2)   authenticate {
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authenticate]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Expiring EAP session with state 0x5ca605e45da408e6
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Finished EAP session with state 0x5ca605e45da408e6
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Previous EAP request found for state 0x5ca605e45da408e6, released from the list
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Peer sent packet with method EAP TLS (13)
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Calling submodule eap_tls to process data
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: Continuing EAP-TLS
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: Peer sent flags ---
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: [eaptls verify] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: Done initial handshake
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: <<< recv TLS 1.3  [length 011d] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: SSLv3/TLS read client hello
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 007b] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: SSLv3/TLS write server hello
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0006] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: TLSv1.3 write encrypted extensions
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 009c] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: SSLv3/TLS write certificate request
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 03f1] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: SSLv3/TLS write certificate
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 004f] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: TLSv1.3 write server certificate verify
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: >>> send TLS 1.3  [length 0034] 
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: SSLv3/TLS write finished
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS_accept: Need to read more data: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS - In Handshake Phase
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: TLS - got 1540 bytes of data
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap_tls: [eaptls process] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: Sending EAP Request (code 1) ID 3 length 1410
+Mon Feb 17 17:12:10 2020 : Debug: (2) eap: EAP session adding &reply:State = 0x5ca605e45ea508e6
+Mon Feb 17 17:12:10 2020 : Debug: (2)     modsingle[authenticate]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (2)     [eap] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (2)   } # authenticate = handled
+Mon Feb 17 17:12:10 2020 : Debug: (2) Using Post-Auth-Type Challenge
+Mon Feb 17 17:12:10 2020 : Debug: (2) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Challenge { ... } # empty sub-section is ignored
+Mon Feb 17 17:12:10 2020 : Debug: (2) session-state: Nothing to cache
+Mon Feb 17 17:12:10 2020 : Debug: (2) Sent Access-Challenge Id 195 from 193.234.219.186:1812 to 130.233.193.123:32931 length 0
+Mon Feb 17 17:12:10 2020 : Debug: (2)   EAP-Message = 0x010305820dc000000604160303007b020000770303ec1501a460c0df81cb1eedb7e33f65be8b444a321c450020a5a47630c991002300130200004f002b00020304003300450017004104bd87c8ca6017a8595ee683834c013e5925eaa20c3e1911108173d196243c45b51c217e29940151b40477a4c3893bd3deedda6eea380a9dcb2bd2cbd054bb410c17030300172a8204e623a064480db959be7db2ca2f378cc01ee6d08017030300ad227fd4f819d6a7dcb6593fb4184d93f0734c5b8dc3fd05ecb39eb6d5043097605c60d084c1b74e243090a8aa7d48895c96471da85d91ad67e769b8b5e132e1538ea3d2530c2a053601cef86262369f143cd0edff020737ed1d1ceddd66c8de38083954892c45b62231a6c41b15111c728b57e504f6263453bfaf6b85cae84b97d62f11f0be938b75b237892e334f1e81d74f782d5c8080c28c1e173d10a4655051d690d3caaa6c9b4f223a8e5e1703030402ebea7264b572c0ff4d6a8faa71e981d1049b7fefdb75dffa7a57
+Mon Feb 17 17:12:10 2020 : Debug: (2)   Message-Authenticator = 0x00000000000000000000000000000000
+Mon Feb 17 17:12:10 2020 : Debug: (2)   State = 0x5ca605e45ea508e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (2) Finished request
+Mon Feb 17 17:12:10 2020 : Debug: Waking up in 4.9 seconds.
+Mon Feb 17 17:12:10 2020 : Debug: (3) Received Access-Request Id 196 from 130.233.193.123:32931 to 193.234.219.186:1812 length 165
+Mon Feb 17 17:12:10 2020 : Debug: (3)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (3)   NAS-IP-Address = 10.90.90.91
+Mon Feb 17 17:12:10 2020 : Debug: (3)   NAS-Port = 0
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Called-Station-Id = "6C-19-8F-83-C2-80:NOOBLABS"
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Calling-Station-Id = "28-16-AD-C7-03-B2"
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Framed-MTU = 1400
+Mon Feb 17 17:12:10 2020 : Debug: (3)   NAS-Port-Type = Wireless-802.11
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Connect-Info = "CONNECT 0Mbps 802.11a"
+Mon Feb 17 17:12:10 2020 : Debug: (3)   EAP-Message = 0x020300060d00
+Mon Feb 17 17:12:10 2020 : Debug: (3)   State = 0x5ca605e45ea508e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Message-Authenticator = 0x24b01fc1566745085983b8292180da3e
+Mon Feb 17 17:12:10 2020 : Debug: (3) session-state: No cached attributes
+Mon Feb 17 17:12:10 2020 : Debug: (3) # Executing section authorize from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (3)   authorize {
+Mon Feb 17 17:12:10 2020 : Debug: (3)     policy filter_username {
+Mon Feb 17 17:12:10 2020 : Debug: (3)       if (&User-Name) {
+Mon Feb 17 17:12:10 2020 : Debug: (3)       if (&User-Name)  -> TRUE
+Mon Feb 17 17:12:10 2020 : Debug: (3)       if (&User-Name)  {
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ / /) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ / /)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /@[^@]*@/ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /\.\./ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /\.\./ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /\.$/)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /\.$/)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /@\./)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (3)         if (&User-Name =~ /@\./)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (3)       } # if (&User-Name)  = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (3)     } # policy filter_username = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [preprocess] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [chap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [mschap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [digest] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (3) suffix: Checking for suffix after "@"
+Mon Feb 17 17:12:10 2020 : Debug: (3) suffix: No '@' in User-Name = "rohit", looking up realm NULL
+Mon Feb 17 17:12:10 2020 : Debug: (3) suffix: No such realm "NULL"
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [suffix] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Peer sent EAP Response (code 2) ID 3 length 6
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: No EAP Start, assuming it's an on-going EAP conversation
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [eap] = updated
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [files] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [expiration] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [logintime] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: calling pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authorize]: returned from pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [pap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (3)   } # authorize = updated
+Mon Feb 17 17:12:10 2020 : Debug: (3) Found Auth-Type = eap
+Mon Feb 17 17:12:10 2020 : Debug: (3) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (3)   authenticate {
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authenticate]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Expiring EAP session with state 0x5ca605e45ea508e6
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Finished EAP session with state 0x5ca605e45ea508e6
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Previous EAP request found for state 0x5ca605e45ea508e6, released from the list
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Peer sent packet with method EAP TLS (13)
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Calling submodule eap_tls to process data
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap_tls: Continuing EAP-TLS
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap_tls: Peer sent flags ---
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap_tls: Peer ACKed our handshake fragment
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap_tls: [eaptls verify] = request
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap_tls: [eaptls process] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: Sending EAP Request (code 1) ID 4 length 150
+Mon Feb 17 17:12:10 2020 : Debug: (3) eap: EAP session adding &reply:State = 0x5ca605e45fa208e6
+Mon Feb 17 17:12:10 2020 : Debug: (3)     modsingle[authenticate]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (3)     [eap] = handled
+Mon Feb 17 17:12:10 2020 : Debug: (3)   } # authenticate = handled
+Mon Feb 17 17:12:10 2020 : Debug: (3) Using Post-Auth-Type Challenge
+Mon Feb 17 17:12:10 2020 : Debug: (3) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Challenge { ... } # empty sub-section is ignored
+Mon Feb 17 17:12:10 2020 : Debug: (3) session-state: Nothing to cache
+Mon Feb 17 17:12:10 2020 : Debug: (3) Sent Access-Challenge Id 196 from 193.234.219.186:1812 to 130.233.193.123:32931 length 0
+Mon Feb 17 17:12:10 2020 : Debug: (3)   EAP-Message = 0x010400960d8000000604bedd43bc45753455ee610d952fb94233ddb82ebbd59297066545de4c59547aa55e18d21c6c84eaf6a79d6d9674a199b9e91bfc2db84def2df4928715371cca168621170303004533f5aff7be71645758a95982cbf993034b1cb596ccae7ae1310326e614a12b1ddca4f2480f04a4f811172bfd34485c683161e8b63a4862c7ae888813d5867aefbbdd63254b
+Mon Feb 17 17:12:10 2020 : Debug: (3)   Message-Authenticator = 0x00000000000000000000000000000000
+Mon Feb 17 17:12:10 2020 : Debug: (3)   State = 0x5ca605e45fa208e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (3) Finished request
+Mon Feb 17 17:12:10 2020 : Debug: Waking up in 4.9 seconds.
+Mon Feb 17 17:12:10 2020 : Debug: (4) Received Access-Request Id 197 from 130.233.193.123:32931 to 193.234.219.186:1812 length 1382
+Mon Feb 17 17:12:10 2020 : Debug: (4)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (4)   NAS-IP-Address = 10.90.90.91
+Mon Feb 17 17:12:10 2020 : Debug: (4)   NAS-Port = 0
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Called-Station-Id = "6C-19-8F-83-C2-80:NOOBLABS"
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Calling-Station-Id = "28-16-AD-C7-03-B2"
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Framed-MTU = 1400
+Mon Feb 17 17:12:10 2020 : Debug: (4)   NAS-Port-Type = Wireless-802.11
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Connect-Info = "CONNECT 0Mbps 802.11a"
+Mon Feb 17 17:12:10 2020 : Debug: (4)   EAP-Message = 0x020404bf0d001703030405819d0c9e74fa6a5ddec109139535498f569329db0d6280bdb062b3ca607bae89e3b546c30ba8ef30d2e3e16fed6f4b6da448ff5042d54915f26a7c4a2b9b5f994a2db8e5a013bdc8599a9fbd704febb51cf3f5fd03badbc634f7ae3f150e8ec7f96bf83ff23727d9ada24d7a15552cd213548057d1a35877005cc3977f6696d5c20f14878575355a48b8da96329af71d19619cd26230c62ede9181f0202bbbf5a3bf83ecce6b94afeaaebd183af1d87c5494c52a8ca49e275b0f30ad75d02d0131c0fe24ecd266e86e74034e1b3aff746b6200928ecd41fc3c4e867e2206042c90323586ec0f125b41e68a9f9960070ef2b7eb4c127601f8623c593b13609070a1fb04248c096aa51125c0aa4e569f7001b2e941f663573aaab08d8f884b9b47ab48ea350df65e6e75db3b88fecfa64bfaea24ecec054964b85d3e3a80edee52d0910688ec5c01a01e214cbc504e1a830973691752675de41e0c3ea6e05c07c95dddd76d4621e2ce03166787
+Mon Feb 17 17:12:10 2020 : Debug: (4)   State = 0x5ca605e45fa208e6f6825330c603e782
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Message-Authenticator = 0x0410efdaae0162eac8c187466422ac8d
+Mon Feb 17 17:12:10 2020 : Debug: (4) session-state: No cached attributes
+Mon Feb 17 17:12:10 2020 : Debug: (4) # Executing section authorize from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (4)   authorize {
+Mon Feb 17 17:12:10 2020 : Debug: (4)     policy filter_username {
+Mon Feb 17 17:12:10 2020 : Debug: (4)       if (&User-Name) {
+Mon Feb 17 17:12:10 2020 : Debug: (4)       if (&User-Name)  -> TRUE
+Mon Feb 17 17:12:10 2020 : Debug: (4)       if (&User-Name)  {
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ / /) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ / /)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /@[^@]*@/ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /\.\./ ) {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /\.\./ )  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /\.$/)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /\.$/)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /@\./)  {
+Mon Feb 17 17:12:10 2020 : Debug: No old matches
+Mon Feb 17 17:12:10 2020 : Debug: (4)         if (&User-Name =~ /@\./)   -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)       } # if (&User-Name)  = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (4)     } # policy filter_username = notfound
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from preprocess (rlm_preprocess)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [preprocess] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from chap (rlm_chap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [chap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from mschap (rlm_mschap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [mschap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from digest (rlm_digest)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [digest] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (4) suffix: Checking for suffix after "@"
+Mon Feb 17 17:12:10 2020 : Debug: (4) suffix: No '@' in User-Name = "rohit", looking up realm NULL
+Mon Feb 17 17:12:10 2020 : Debug: (4) suffix: No such realm "NULL"
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from suffix (rlm_realm)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [suffix] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Peer sent EAP Response (code 2) ID 4 length 1215
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: No EAP Start, assuming it's an on-going EAP conversation
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [eap] = updated
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from files (rlm_files)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [files] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from expiration (rlm_expiration)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [expiration] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from logintime (rlm_logintime)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [logintime] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: calling pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authorize]: returned from pap (rlm_pap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [pap] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)   } # authorize = updated
+Mon Feb 17 17:12:10 2020 : Debug: (4) Found Auth-Type = eap
+Mon Feb 17 17:12:10 2020 : Debug: (4) # Executing group from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (4)   authenticate {
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authenticate]: calling eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Expiring EAP session with state 0x5ca605e45fa208e6
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Finished EAP session with state 0x5ca605e45fa208e6
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Previous EAP request found for state 0x5ca605e45fa208e6, released from the list
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Peer sent packet with method EAP TLS (13)
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Calling submodule eap_tls to process data
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: Continuing EAP-TLS
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: Peer sent flags ---
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: [eaptls verify] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: Done initial handshake
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS_accept: TLSv1.3 early data
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 03f4] 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS - Creating attributes from certificate OIDs
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Cert-Serial := "293b226def2739fb4a0486e653a9315aa71c5b7d"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Cert-Expiration := "210109125658Z"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Cert-Subject := "/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Cert-Issuer := "/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Cert-Common-Name := "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: chain-depth   : 1
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: error         : 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: identity      : rohit
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: common name   : rohit
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: subject       : /C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: issuer        : /C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: verify return : 1
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS - Creating attributes from certificate OIDs
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Client-Cert-Serial := "0ada0d7323b229201695d4c3ca3a71ed02f7b914"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Client-Cert-Expiration := "200713134402Z"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Client-Cert-Subject := "/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admins@example.com"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Client-Cert-Issuer := "/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls:   TLS-Client-Cert-Common-Name := "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: chain-depth   : 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: error         : 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: identity      : rohit
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: common name   : rohit
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: subject       : /C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admins@example.com
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: issuer        : /C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: verify return : 1
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS_accept: SSLv3/TLS read client certificate
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 004f] 
+Mon Feb 17 17:12:10 2020 : Debug: Ignoring cbtls_msg call with pseudo content type 256, version 0
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 0001] 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS_accept: SSLv3/TLS read certificate verify
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: <<< recv TLS 1.3  [length 0034] 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS_accept: SSLv3/TLS read finished
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: (other): SSL negotiation finished successfully
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS - Connection Established
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS-Session-Cipher-Suite = "TLS_AES_256_GCM_SHA384"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS-Session-Version = "TLS 1.3"
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: TLS - Application data.
+Mon Feb 17 17:12:10 2020 : WARNING: (4) eap_tls: No information in cached session 
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap_tls: [eaptls process] = success
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Sending EAP Success (code 3) ID 4 length 4
+Mon Feb 17 17:12:10 2020 : Debug: (4) eap: Freeing handler
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[authenticate]: returned from eap (rlm_eap)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [eap] = ok
+Mon Feb 17 17:12:10 2020 : Debug: (4)   } # authenticate = ok
+Mon Feb 17 17:12:10 2020 : Debug: (4) # Executing section post-auth from file /usr/local/etc/raddb/sites-enabled/default
+Mon Feb 17 17:12:10 2020 : Debug: (4)   post-auth {
+Mon Feb 17 17:12:10 2020 : Debug: (4)     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name)) {
+Mon Feb 17 17:12:10 2020 : Debug: (4)     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name))  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)     update {
+Mon Feb 17 17:12:10 2020 : Debug: (4)       &reply::TLS-Session-Cipher-Suite += &session-state:TLS-Session-Cipher-Suite[*] -> 'TLS_AES_256_GCM_SHA384'
+Mon Feb 17 17:12:10 2020 : Debug: (4)       &reply::TLS-Session-Version += &session-state:TLS-Session-Version[*] -> 'TLS 1.3'
+Mon Feb 17 17:12:10 2020 : Debug: (4)     } # update = noop
+Mon Feb 17 17:12:10 2020 : Debug: %{reply:EAP-MSK}
+Mon Feb 17 17:12:10 2020 : Debug: Parsed xlat tree:
+Mon Feb 17 17:12:10 2020 : Debug: attribute --> EAP-MSK
+Mon Feb 17 17:12:10 2020 : Debug: (4)     EXPAND %{reply:EAP-MSK}
+Mon Feb 17 17:12:10 2020 : Debug: (4)        --> 0x29654c4c075399419fd6560f58bf9885fd6557cc5d1a9b7ddbf8c50d5ab261154d6f4ccdeab36c82b5825407fe45cc63ea6ef0918ec5c5ffa9fdbbfff770f
+Mon Feb 17 17:12:10 2020 : Debug: %{reply:EAP-EMSK}
+Mon Feb 17 17:12:10 2020 : Debug: Parsed xlat tree:
+Mon Feb 17 17:12:10 2020 : Debug: attribute --> EAP-EMSK
+Mon Feb 17 17:12:10 2020 : Debug: (4)     EXPAND %{reply:EAP-EMSK}
+Mon Feb 17 17:12:10 2020 : Debug: (4)        --> 0x85656808ed0203b286b16e6813c97e1b04cf9182790f4a98e395d29d7fc3ddae1c099247ad2b4dfd2dea0fe35dc40a700521bdf6ebb7d7e4eb87c84d666ca
+Mon Feb 17 17:12:10 2020 : Debug: %{reply:EAP-Session-Id}
+Mon Feb 17 17:12:10 2020 : Debug: Parsed xlat tree:
+Mon Feb 17 17:12:10 2020 : Debug: attribute --> EAP-Session-Id
+Mon Feb 17 17:12:10 2020 : Debug: (4)     EXPAND %{reply:EAP-Session-Id}
+Mon Feb 17 17:12:10 2020 : Debug: (4)        --> 0x0d7511e75a22a87460c0e680c4ee67366da6df706e48ffa9363ec690b3d30259b1ec1501a460c0df81cb1eedb7e33f65be8b444a321c450020a5a47630c99
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[post-auth]: calling exec (rlm_exec)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     modsingle[post-auth]: returned from exec (rlm_exec)
+Mon Feb 17 17:12:10 2020 : Debug: (4)     [exec] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     policy remove_reply_message_if_eap {
+Mon Feb 17 17:12:10 2020 : Debug: (4)       if (&reply:EAP-Message && &reply:Reply-Message) {
+Mon Feb 17 17:12:10 2020 : Debug: (4)       if (&reply:EAP-Message && &reply:Reply-Message)  -> FALSE
+Mon Feb 17 17:12:10 2020 : Debug: (4)       else {
+Mon Feb 17 17:12:10 2020 : Debug: (4)         modsingle[post-auth]: calling noop (rlm_always)
+Mon Feb 17 17:12:10 2020 : Debug: (4)         modsingle[post-auth]: returned from noop (rlm_always)
+Mon Feb 17 17:12:10 2020 : Debug: (4)         [noop] = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)       } # else = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)     } # policy remove_reply_message_if_eap = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4)   } # post-auth = noop
+Mon Feb 17 17:12:10 2020 : Debug: (4) Sent Access-Accept Id 197 from 193.234.219.186:1812 to 130.233.193.123:32931 length 0
+Mon Feb 17 17:12:10 2020 : Debug: (4)   MS-MPPE-Recv-Key = 0x29654c4c075399419fd6560f58bf9885fd6557cc5d1a9b7ddbf8c50d5ab26115
+Mon Feb 17 17:12:10 2020 : Debug: (4)   MS-MPPE-Send-Key = 0x4d6f4ccdeab36c82b5825407fe45cc63ea6ef0918ec5c5ffa9fdbbfff770fc2f
+Mon Feb 17 17:12:10 2020 : Debug: (4)   EAP-Message = 0x03040004
+Mon Feb 17 17:12:10 2020 : Debug: (4)   Message-Authenticator = 0x00000000000000000000000000000000
+Mon Feb 17 17:12:10 2020 : Debug: (4)   User-Name = "rohit"
+Mon Feb 17 17:12:10 2020 : Debug: (4) Finished request
+Mon Feb 17 17:12:10 2020 : Debug: Waking up in 4.8 seconds.
+Mon Feb 17 17:12:15 2020 : Debug: (0) Cleaning up request packet ID 193 with timestamp +42
+Mon Feb 17 17:12:15 2020 : Debug: (1) Cleaning up request packet ID 194 with timestamp +42
+Mon Feb 17 17:12:15 2020 : Debug: (2) Cleaning up request packet ID 195 with timestamp +42
+Mon Feb 17 17:12:15 2020 : Debug: (3) Cleaning up request packet ID 196 with timestamp +42
+Mon Feb 17 17:12:15 2020 : Debug: (4) Cleaning up request packet ID 197 with timestamp +42
+Mon Feb 17 17:12:15 2020 : Info: Ready to process requests

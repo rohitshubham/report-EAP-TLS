@@ -1,0 +1,829 @@
+wpa_supplicant v2.9
+random: Trying to read entropy from /dev/random
+Successfully initialized wpa_supplicant
+Initializing interface 'wlp2s0' conf 'wpa_supplicant_test.conf' driver 'default' ctrl_interface 'N/A' bridge 'N/A'
+Configuration file 'wpa_supplicant_test.conf' -> '/home/rohit/Downloads/wpa_supplicant-2.9/wpa_supplicant/wpa_supplicant_test.conf'
+Reading configuration file '/home/rohit/Downloads/wpa_supplicant-2.9/wpa_supplicant/wpa_supplicant_test.conf'
+update_config=1
+ctrl_interface='/var/run/wpa_supplicant'
+Line: 4 - start of a new network block
+key_mgmt: 0x9
+ssid - hexdump_ascii(len=8):
+     4e 4f 4f 42 4c 41 42 53                           NOOBLABS        
+scan_ssid=1 (0x1)
+eap methods - hexdump(len=16): 00 00 00 00 0d 00 00 00 00 00 00 00 00 00 00 00
+identity - hexdump_ascii(len=5):
+     72 6f 68 69 74                                    rohit           
+ca_cert - hexdump_ascii(len=24):
+     2e 2e 2f 63 65 72 74 73 2f 63 6c 69 65 6e 74 2f   ../certs/client/
+     63 65 72 74 2e 70 65 6d                           cert.pem        
+client_cert - hexdump_ascii(len=26):
+     2e 2e 2f 63 65 72 74 73 2f 63 6c 69 65 6e 74 2f   ../certs/client/
+     63 6c 69 65 6e 74 2e 63 72 74                     client.crt      
+private_key - hexdump_ascii(len=26):
+     2e 2e 2f 63 65 72 74 73 2f 63 6c 69 65 6e 74 2f   ../certs/client/
+     63 6c 69 65 6e 74 2e 6b 65 79                     client.key      
+phase1 - hexdump_ascii(len=21):
+     74 6c 73 5f 64 69 73 61 62 6c 65 5f 74 6c 73 76   tls_disable_tlsv
+     31 5f 33 3d 30                                    1_3=0           
+fragment_size=4000 (0xfa0)
+dot11RSNAConfigPMKLifetime=10
+Priority group 0
+   id=0 ssid='NOOBLABS'
+nl80211: TDLS supported
+nl80211: TDLS external setup
+nl80211: Supported cipher 00-0f-ac:1
+nl80211: Supported cipher 00-0f-ac:5
+nl80211: Supported cipher 00-0f-ac:2
+nl80211: Supported cipher 00-0f-ac:4
+nl80211: Supported cipher 00-0f-ac:6
+nl80211: Using driver-based off-channel TX
+nl80211: TDLS channel switch
+nl80211: Driver-advertised extended capabilities (default) - hexdump(len=8): 04 00 00 00 00 00 00 40
+nl80211: Driver-advertised extended capabilities mask (default) - hexdump(len=8): 04 00 00 00 00 00 00 40
+nl80211: Use separate P2P group interface (driver advertised support)
+nl80211: Enable multi-channel concurrent (driver advertised support)
+nl80211: use P2P_DEVICE support
+nl80211: interface wlp2s0 in phy phy0
+nl80211: Set mode ifindex 3 iftype 2 (STATION)
+nl80211: Subscribe to mgmt frames with non-AP handle 0x564f371a2ab0
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=06
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=0a07
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=0a11
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=1101
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=1102
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=0505
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=0500
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x564f371a2ab0 match=0502
+rfkill: initial event: idx=1 type=1 op=0 soft=0 hard=0
+netlink: Operstate: ifindex=3 linkmode=1 (userspace-control), operstate=5 (IF_OPER_DORMANT)
+Add interface wlp2s0 to a new radio phy0
+nl80211: Regulatory information - country=GB
+nl80211: 2402-2437 @ 40 MHz 22 mBm
+nl80211: 2422-2462 @ 40 MHz 22 mBm
+nl80211: 2447-2482 @ 40 MHz 22 mBm
+nl80211: 5170-5190 @ 80 MHz 22 mBm (no outdoor) (no IR)
+nl80211: 5190-5210 @ 80 MHz 22 mBm (no outdoor) (no IR)
+nl80211: 5210-5230 @ 80 MHz 22 mBm (no outdoor) (no IR)
+nl80211: 5230-5250 @ 80 MHz 22 mBm (no outdoor) (no IR)
+nl80211: 5250-5270 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5270-5290 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5290-5310 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5310-5330 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5490-5510 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5510-5530 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5530-5550 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5550-5570 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5570-5590 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5590-5610 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5610-5630 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5630-5650 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5650-5670 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5670-5690 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5690-5710 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5710-5730 @ 80 MHz 22 mBm (DFS) (no IR)
+nl80211: 5735-5755 @ 80 MHz 22 mBm (no IR)
+nl80211: 5755-5775 @ 80 MHz 22 mBm (no IR)
+nl80211: 5775-5795 @ 80 MHz 22 mBm (no IR)
+nl80211: 5795-5815 @ 80 MHz 22 mBm (no IR)
+nl80211: 5815-5835 @ 20 MHz 22 mBm (no IR)
+nl80211: Added 802.11b mode based on 802.11g information
+nl80211: Mode IEEE 802.11g: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 2484[DISABLED]
+nl80211: Mode IEEE 802.11a: 5180[NO_IR] 5200[NO_IR] 5220[NO_IR] 5240[NO_IR] 5260[NO_IR][RADAR] 5280[NO_IR][RADAR] 5300[NO_IR][RADAR] 5320[NO_IR][RADAR] 5340[DISABLED] 5360[DISABLED] 5380[DISABLED] 5400[DISABLED] 5420[DISABLED]
+nl80211: Mode IEEE 802.11b: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 2484[DISABLED]
+wlp2s0: Own MAC address: 28:16:ad:c7:03:b2
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+wlp2s0: RSN: flushing PMKID list in the driver
+nl80211: Flush PMKIDs
+EAPOL: SUPP_PAE entering state DISCONNECTED
+EAPOL: Supplicant port status: Unauthorized
+nl80211: Skip set_supp_port(unauthorized) while not associated
+EAPOL: KEY_RX entering state NO_KEY_RECEIVE
+EAPOL: SUPP_BE entering state INITIALIZE
+EAP: EAP entering state DISABLED
+wlp2s0: Added interface wlp2s0
+wlp2s0: State: DISCONNECTED -> DISCONNECTED
+nl80211: Set wlp2s0 operstate 0->0 (DORMANT)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=5 (IF_OPER_DORMANT)
+random: Got 20/20 bytes from /dev/random
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 operstate=2 linkmode=1 ifi_family=0 ifi_flags=0x1003 ([UP])
+wlp2s0: Starting delayed sched scan
+wlp2s0: Use normal scan instead of sched_scan for initial scans (normal_scans=0)
+wlp2s0: Setting scan request: 0.000000 sec
+wlp2s0: State: DISCONNECTED -> SCANNING
+Scan SSID - hexdump_ascii(len=8):
+     4e 4f 4f 42 4c 41 42 53                           NOOBLABS        
+wlp2s0: Starting AP scan for wildcard SSID
+wlp2s0: Add radio work 'scan'@0x564f371cd240
+wlp2s0: First radio work item in the queue - schedule start immediately
+wlp2s0: Starting radio work 'scan'@0x564f371cd240 after 0.000069 second wait
+wlp2s0: nl80211: scan request
+nl80211: Scan SSID NOOBLABS
+nl80211: Scan SSID 
+nl80211: Scan extra IEs - hexdump(len=10): 7f 08 04 00 00 00 00 00 00 40
+Scan requested (ret=0) - scan timeout 10 seconds
+nl80211: Event message available
+nl80211: Drv Event 33 (NL80211_CMD_TRIGGER_SCAN) received for wlp2s0
+wlp2s0: nl80211: Scan trigger
+wlp2s0: Event SCAN_STARTED (47) received
+wlp2s0: Own scan request started a scan in 0.000153 seconds
+EAPOL: disable timer tick
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 wext ifi_family=0 ifi_flags=0x1003 ([UP])
+nl80211: Event message available
+nl80211: Drv Event 34 (NL80211_CMD_NEW_SCAN_RESULTS) received for wlp2s0
+wlp2s0: nl80211: New scan results available
+nl80211: Scan probed for SSID 'NOOBLABS'
+nl80211: Scan probed for SSID ''
+nl80211: Scan included frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 5180 5200 5220 5240 5260 5280 5300 5320 5500 5520 5540 5560 5580 5600 5620 5640 5660 5680 5700 5720 5745 5765 5785 5805 5825
+wlp2s0: Event SCAN_RESULTS (3) received
+wlp2s0: Scan completed in 3.089163 seconds
+nl80211: Received scan results (14 BSSes)
+Sorted scan results
+6c:19:8f:83:c2:80 freq=5260 qual=0 noise=-92~ level=-52 snr=40* flags=0xb age=2228 est=135000
+IEs - hexdump(len=257): 00 08 4e 4f 4f 42 4c 41 42 53 01 08 8c 12 98 24 b0 48 60 6c 07 34 47 42 20 24 01 17 28 01 17 2c 01 17 30 01 17 34 01 17 38 01 17 3c 01 17 40 01 17 64 01 1e 68 01 1e 6c 01 1e 70 01 1e 74 01 1e 84 01 1e 88 01 1e 8c 01 1e 00 20 01 00 23 02 16 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00 2d 1a 6e 08 1f ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+Beacon IEs - hexdump(len=263): 00 08 4e 4f 4f 42 4c 41 42 53 01 08 8c 12 98 24 b0 48 60 6c 05 04 01 02 00 00 07 34 47 42 20 24 01 17 28 01 17 2c 01 17 30 01 17 34 01 17 38 01 17 3c 01 17 40 01 17 64 01 1e 68 01 1e 6c 01 1e 70 01 1e 74 01 1e 84 01 1e 88 01 1e 8c 01 1e 00 20 01 00 23 02 16 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00 2d 1a 6e 08 1f ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+6c:19:8f:83:c2:81 freq=5260 qual=0 noise=-92~ level=-52 snr=40* flags=0xb age=2236 est=135000
+IEs - hexdump(len=272): 00 11 4e 4f 4f 42 4c 41 42 53 5f 50 45 52 53 4f 4e 41 4c 01 08 8c 12 98 24 b0 48 60 6c 05 04 01 02 00 00 07 34 47 42 20 24 01 17 28 01 17 2c 01 17 30 01 17 34 01 17 38 01 17 3c 01 17 40 01 17 64 01 1e 68 01 1e 6c 01 1e 70 01 1e 74 01 1e 84 01 1e 88 01 1e 8c 01 1e 00 20 01 00 23 02 16 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 02 0c 00 2d 1a 6e 08 1f ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 02 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+Beacon IEs - hexdump(len=272): 00 11 4e 4f 4f 42 4c 41 42 53 5f 50 45 52 53 4f 4e 41 4c 01 08 8c 12 98 24 b0 48 60 6c 05 04 01 02 00 00 07 34 47 42 20 24 01 17 28 01 17 2c 01 17 30 01 17 34 01 17 38 01 17 3c 01 17 40 01 17 64 01 1e 68 01 1e 6c 01 1e 70 01 1e 74 01 1e 84 01 1e 88 01 1e 8c 01 1e 00 20 01 00 23 02 16 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 02 0c 00 2d 1a 6e 08 1f ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 02 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+f4:db:e6:86:db:ac freq=5500 qual=0 noise=-92~ level=-70 snr=22 flags=0xb age=11563 est=121501
+IEs - hexdump(len=249): 00 0b 43 6f 6d 6e 65 74 5f 66 72 65 65 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 28 00 0b 05 06 00 02 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+Beacon IEs - hexdump(len=249): 00 0b 43 6f 6d 6e 65 74 5f 66 72 65 65 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 28 00 0b 05 06 00 02 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+f4:db:e6:86:db:af freq=5500 qual=0 noise=-92~ level=-71 snr=21 flags=0xb age=1850 est=108001
+IEs - hexdump(len=243): 00 05 61 61 6c 74 6f 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 06 00 07 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+Beacon IEs - hexdump(len=243): 00 05 61 61 6c 74 6f 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 06 00 07 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+f4:db:e6:86:db:ad freq=5500 qual=0 noise=-92~ level=-71 snr=21 flags=0xb age=1840 est=108001
+IEs - hexdump(len=240): 00 07 65 64 75 72 6f 61 6d 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 06 00 07 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+Beacon IEs - hexdump(len=240): 00 07 65 64 75 72 6f 61 6d 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 06 00 07 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+f4:db:e6:86:db:ab freq=5500 qual=0 noise=-92~ level=-71 snr=21 flags=0xb age=11558 est=108001
+IEs - hexdump(len=241): 00 08 00 00 00 00 00 00 00 00 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 28 00 0b 05 06 00 02 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+Beacon IEs - hexdump(len=241): 00 08 00 00 00 00 00 00 00 00 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 28 00 0b 05 06 00 02 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+94:10:3e:8c:e2:4f freq=2467 qual=0 noise=-89~ level=-70 snr=19 flags=0xb age=12428 est=108000
+IEs - hexdump(len=346): 00 03 69 6f 74 01 08 82 84 8b 96 0c 12 18 24 03 01 0c 04 06 00 02 00 00 00 00 2a 01 00 32 04 30 48 60 6c 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 00 00 2d 1a fe 11 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 0c 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 b4 00 c8 00 14 00 05 00 19 00 7f 01 01 dd 1e 00 90 4c 33 fe 11 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 1a 00 90 4c 34 0c 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 06 00 50 43 03 00 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 7a 00 50 f2 04 10 4a 00 01 10 10 44 00 01 02 10 3b 00 01 03 10 47 00 10 25 e4 ba 52 4d 8d 96 58 86 a7 1b 3f 15 ef 1a 0b 10 21 00 07 4c 69 6e 6b 73 79 73 10 23 00 03 57 41 50 10 24 00 03 31 32 33 10 42 00 05 31 32 33 34 35 10 54 00 08 00 06 00 50 f2 04 00 01 10 11 00 0c 4c 69 6e 6b 73 79 73 30 35 37 35 31 10 08 00 02 20 0c 10 3c 00 01 01 10 49 00 06 00 37 2a 00 01 20
+6c:19:8f:83:c2:90 freq=2447 qual=0 noise=-89~ level=-53 snr=36* flags=0xb age=2753 est=65000
+IEs - hexdump(len=216): 00 05 6e 6f 6f 62 32 01 08 82 84 8b 96 24 30 48 6c 03 01 08 07 06 47 42 20 01 0d 14 2a 01 00 2f 01 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 02 0c 00 32 04 0c 12 18 60 2d 1a 7c 18 1f ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 08 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 02 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+Beacon IEs - hexdump(len=222): 00 05 6e 6f 6f 62 32 01 08 82 84 8b 96 24 30 48 6c 03 01 08 05 04 00 02 00 00 07 06 47 42 20 01 0d 14 2a 01 00 2f 01 00 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 02 0c 00 32 04 0c 12 18 60 2d 1a 7c 18 1f ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 08 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 09 00 10 18 02 00 00 0c 00 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 02 0c 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 0a 00 02 bc 01 6c 19 8f 83 c2 80
+70:0f:6a:09:35:4f freq=5680 qual=0 noise=-92~ level=-79 snr=13 flags=0xb age=871 est=54001
+IEs - hexdump(len=221): 00 05 61 61 6c 74 6f 01 07 12 98 24 30 48 60 6c 03 01 88 05 06 00 01 10 08 28 04 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 0b 00 07 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+Beacon IEs - hexdump(len=221): 00 05 61 61 6c 74 6f 01 07 12 98 24 30 48 60 6c 03 01 88 05 06 00 01 10 08 28 04 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 0b 00 07 8d 5b 46 05 02 00 00 00 00 36 03 ac 34 01 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b c9
+70:0f:6a:09:35:4d freq=5680 qual=0 noise=-92~ level=-79 snr=13 flags=0xb age=861 est=54001
+IEs - hexdump(len=216): 00 07 65 64 75 72 6f 61 6d 01 07 12 98 24 30 48 60 6c 03 01 88 05 04 00 01 00 00 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 0b 00 07 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+Beacon IEs - hexdump(len=216): 00 07 65 64 75 72 6f 61 6d 01 07 12 98 24 30 48 60 6c 03 01 88 05 04 00 01 00 00 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 01 28 00 0b 05 0b 00 07 8d 5b 46 05 02 00 00 00 00 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 04 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+10:c3:7b:44:44:b8 freq=2417 qual=0 noise=-89~ level=-76 snr=13 flags=0xb age=3009 est=54000
+IEs - hexdump(len=326): 00 0e 69 6f 74 5f 6d 6f 6e 69 74 6f 72 69 6e 67 01 08 82 84 8b 96 12 24 48 6c 03 01 02 2a 01 04 32 04 0c 18 30 60 2d 1a ee 11 17 ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00 00 3d 16 02 05 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 00 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 0b 05 03 00 35 12 7a 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 07 00 0c 43 07 00 00 00 07 06 47 42 20 01 0d 10 dd 8f 00 50 f2 04 10 4a 00 01 10 10 44 00 01 02 10 3b 00 01 03 10 47 00 10 bc 32 9e 00 1d d8 11 b2 86 01 10 c3 7b 44 44 b8 10 21 00 15 41 53 55 53 54 65 4b 20 43 6f 6d 70 75 74 65 72 20 49 6e 63 2e 10 23 00 0a 57 50 53 20 52 6f 75 74 65 72 10 24 00 07 52 54 2d 4e 35 36 55 10 42 00 08 30 30 30 30 30 30 30 30 10 54 00 08 00 06 00 50 f2 04 00 01 10 11 00 0f 41 53 55 53 20 57 50 53 20 52 6f 75 74 65 72 10 08 00 02 00 8c 10 3c 00 01 01
+Beacon IEs - hexdump(len=248): 00 0e 69 6f 74 5f 6d 6f 6e 69 74 6f 72 69 6e 67 01 08 82 84 8b 96 12 24 48 6c 03 01 02 32 04 0c 18 30 60 07 06 47 42 20 01 0d 14 33 08 20 01 02 03 04 05 06 07 33 08 21 05 06 07 08 09 0a 0b 05 04 00 01 00 00 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 00 00 dd 27 00 50 f2 04 10 4a 00 01 10 10 44 00 01 02 10 47 00 10 bc 32 9e 00 1d d8 11 b2 86 01 10 c3 7b 44 44 b8 10 3c 00 01 01 2a 01 04 2d 1a ee 11 17 ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00 00 3d 16 02 05 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 0b 05 03 00 39 12 7a dd 07 00 0c 43 07 00 00 00
+1c:5f:2b:a0:7a:d4 freq=2462 qual=0 noise=-89~ level=-73 snr=16 flags=0xb age=2625 est=48000
+IEs - hexdump(len=373): 00 0c 64 6c 69 6e 6b 2d 61 30 37 61 64 34 01 08 82 84 8b 96 12 24 48 6c 03 01 0b 2a 01 04 32 04 0c 18 30 60 2d 1a 6e 10 17 ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00 00 3d 16 0b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 1a 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 02 00 50 f2 04 01 00 00 50 f2 02 30 18 01 00 00 0f ac 02 02 00 00 0f ac 02 00 0f ac 04 01 00 00 0f ac 02 00 00 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 07 00 0c 43 04 00 00 00 07 06 45 55 20 01 0b 10 dd a7 00 50 f2 04 10 4a 00 01 10 10 44 00 01 02 10 3b 00 01 03 10 47 00 10 bc 32 9e 00 1d d8 11 b2 86 01 1c 5f 2b a0 7a d4 10 21 00 18 52 61 6c 69 6e 6b 20 54 65 63 68 6e 6f 6c 6f 67 79 2c 20 43 6f 72 70 2e 10 23 00 1c 52 61 6c 69 6e 6b 20 57 69 72 65 6c 65 73 73 20 41 63 63 65 73 73 20 50 6f 69 6e 74 10 24 00 06 52 54 32 38 36 30 10 42 00 08 31 32 33 34 35 36 37 38 10 54 00 08 00 06 00 50 f2 04 00 01 10 11 00 09 52 61 6c 69 6e 6b 41 50 53 10 08 00 02 20 8c 10 3c 00 01 01 10 49 00 06 00 37 2a 00 01 20
+Beacon IEs - hexdump(len=281): 00 0c 64 6c 69 6e 6b 2d 61 30 37 61 64 34 01 08 82 84 8b 96 12 24 48 6c 03 01 0b 32 04 0c 18 30 60 07 06 45 55 20 01 0b 14 33 08 20 01 02 03 04 05 06 07 33 08 21 05 06 07 08 09 0a 0b 05 04 00 01 00 00 dd 1a 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 02 00 50 f2 04 01 00 00 50 f2 02 30 18 01 00 00 0f ac 02 02 00 00 0f ac 02 00 0f ac 04 01 00 00 0f ac 02 00 00 dd 31 00 50 f2 04 10 4a 00 01 10 10 44 00 01 02 10 47 00 10 bc 32 9e 00 1d d8 11 b2 86 01 1c 5f 2b a0 7a d4 10 3c 00 01 01 10 49 00 06 00 37 2a 00 01 20 2a 01 04 2d 1a 6e 10 17 ff ff 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00 00 3d 16 0b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 7f 01 01 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 07 00 0c 43 04 00 00 00
+f4:db:e6:86:db:ae freq=5500 qual=0 noise=-92~ level=-71 snr=21 flags=0xb age=1845 est=108001
+IEs - hexdump(len=214): 00 0a 61 61 6c 74 6f 20 6f 70 65 6e 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 0b 05 06 00 07 8d 5b 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 00 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+Beacon IEs - hexdump(len=214): 00 0a 61 61 6c 74 6f 20 6f 70 65 6e 01 07 12 98 24 30 48 60 6c 03 01 64 05 04 00 01 00 00 07 33 46 49 00 24 01 15 28 01 15 2c 01 15 30 01 15 34 01 15 38 01 15 3c 01 15 40 01 15 64 01 17 68 01 17 6c 01 17 70 01 17 74 01 17 84 01 17 88 01 17 8c 01 17 20 01 00 0b 05 06 00 07 8d 5b 2d 1a 6f 09 03 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 64 05 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 00 00 00 00 40 bf 0c 31 79 8b 33 ea ff 00 00 ea ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+70:0f:6a:09:35:4e freq=5680 qual=0 noise=-92~ level=-79 snr=13 flags=0xb age=866 est=54001
+IEs - hexdump(len=193): 00 0a 61 61 6c 74 6f 20 6f 70 65 6e 01 07 12 98 24 30 48 60 6c 03 01 88 05 07 00 01 10 00 10 00 14 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 0b 05 0b 00 07 8d 5b 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 00 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+Beacon IEs - hexdump(len=193): 00 0a 61 61 6c 74 6f 20 6f 70 65 6e 01 07 12 98 24 30 48 60 6c 03 01 88 05 07 00 01 10 00 10 00 14 07 1b 46 49 00 64 01 18 68 01 18 6c 01 18 70 01 18 74 01 18 84 01 18 88 01 18 8c 01 18 20 01 00 0b 05 0b 00 07 8d 5b 2d 1a 6f 09 03 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 88 07 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 10 08 00 00 00 00 40 bf 0c 31 39 89 33 fa ff 00 00 fa ff 00 00 c0 05 00 00 00 fc ff c3 03 01 12 12 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00 dd 05 00 40 96 0b 89
+wlp2s0: BSS: Start scan result update 1
+wlp2s0: BSS: Add new id 0 BSSID 6c:19:8f:83:c2:80 SSID 'NOOBLABS' freq 5260
+wlp2s0: BSS: Add new id 1 BSSID 6c:19:8f:83:c2:81 SSID 'NOOBLABS_PERSONAL' freq 5260
+wlp2s0: BSS: Add new id 2 BSSID f4:db:e6:86:db:ac SSID 'Comnet_free' freq 5500
+wlp2s0: BSS: Add new id 3 BSSID f4:db:e6:86:db:af SSID 'aalto' freq 5500
+wlp2s0: BSS: Add new id 4 BSSID f4:db:e6:86:db:ad SSID 'eduroam' freq 5500
+wlp2s0: BSS: Add new id 5 BSSID f4:db:e6:86:db:ab SSID '\x00\x00\x00\x00\x00\x00\x00\x00' freq 5500
+wlp2s0: BSS: Add new id 6 BSSID 94:10:3e:8c:e2:4f SSID 'iot' freq 2467
+wlp2s0: BSS: Add new id 7 BSSID 6c:19:8f:83:c2:90 SSID 'noob2' freq 2447
+wlp2s0: BSS: Add new id 8 BSSID 70:0f:6a:09:35:4f SSID 'aalto' freq 5680
+wlp2s0: BSS: Add new id 9 BSSID 70:0f:6a:09:35:4d SSID 'eduroam' freq 5680
+wlp2s0: BSS: Add new id 10 BSSID 10:c3:7b:44:44:b8 SSID 'iot_monitoring' freq 2417
+wlp2s0: BSS: Add new id 11 BSSID 1c:5f:2b:a0:7a:d4 SSID 'dlink-a07ad4' freq 2462
+wlp2s0: BSS: Add new id 12 BSSID f4:db:e6:86:db:ae SSID 'aalto open' freq 5500
+wlp2s0: BSS: Add new id 13 BSSID 70:0f:6a:09:35:4e SSID 'aalto open' freq 5680
+BSS: last_scan_res_used=14/32
+Add randomness: count=1 entropy=0
+random pool - hexdump(len=128): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 c0 55 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 80 00 a4 cc 3d
+random pool - hexdump(len=128): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 59 02 c5 e4 f8 87 1a 7b e1 5e 8a 32 ab 2f 4f 0d 86 29 38 82 82 1b 6b b4 62 91 80 4d f8 70 63 ac 7f 6f 06 97 64 79 6b 41 ed ae 40 d4 78 8d 04 9f 1f c0 11 21 99 6f f1 46 b1 0a ab f7 99 02 58 7b c5 87 ad 1f 38 69 6c 7f cc ab 35 b9 65 6f 7f 4a 61 b2 4d
+Add randomness: count=2 entropy=1
+random pool - hexdump(len=128): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 59 02 c5 e4 f8 87 1a 7b e1 5e 8a 32 ab 2f 4f 0d 86 29 38 82 82 1b 6b b4 62 91 80 4d f8 70 63 ac 7f 6f 06 97 64 79 6b 41 ed ae 40 d4 78 8d 04 9f 1f c0 11 21 99 6f f1 46 b1 0a ab f7 99 02 58 7b c5 87 ad 1f 38 69 6c 7f cc ab 35 b9 65 6f 7f 4a 61 b2 4d
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 7e 56 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 81 00 a4 cc 02
+random pool - hexdump(len=128): 0f 3d cd ea 53 8d 8d ee 84 1e 77 89 55 af 6e e1 92 eb 65 a4 7e 12 0a 0b b4 c4 00 a2 7c 2a 74 a9 2f c3 df e9 ba 8c f7 73 6a 39 2e 66 fc 59 02 c5 e4 f8 87 1a 7b e1 5e 8a 32 ab 2f 4f 0d 86 29 38 82 82 1b 6b b4 62 91 80 4d f8 70 63 ac 7f 6f 06 97 64 79 6b 41 ed ae 40 4d 3e dd 0e d8 61 b7 52 e6 cf d5 f5 b6 ad ba ed 56 4c 93 64 1c 76 7c e8 ed 95 a7 01 1e fb 83 89 4c ce a4 52 ec 96 48 04
+Add randomness: count=3 entropy=2
+random pool - hexdump(len=128): 0f 3d cd ea 53 8d 8d ee 84 1e 77 89 55 af 6e e1 92 eb 65 a4 7e 12 0a 0b b4 c4 00 a2 7c 2a 74 a9 2f c3 df e9 ba 8c f7 73 6a 39 2e 66 fc 59 02 c5 e4 f8 87 1a 7b e1 5e 8a 32 ab 2f 4f 0d 86 29 38 82 82 1b 6b b4 62 91 80 4d f8 70 63 ac 7f 6f 06 97 64 79 6b 41 ed ae 40 4d 3e dd 0e d8 61 b7 52 e6 cf d5 f5 b6 ad ba ed 56 4c 93 64 1c 76 7c e8 ed 95 a7 01 1e fb 83 89 4c ce a4 52 ec 96 48 04
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 3e 57 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): ac 00 a4 ba 0b
+random pool - hexdump(len=128): 0f 3d cd ea 98 dd aa b8 3f 21 5f 5a 2b 9f 20 c3 c7 b8 92 9b 8d b8 c1 55 f8 df e0 8a b8 59 28 29 ae 3a e7 ff 95 58 5f cb 64 13 fa e0 5b 29 3d e3 54 8b 8c e5 4e b7 cb 3b 24 dd 69 92 ea e2 70 36 a0 71 18 45 2d 78 13 ec 50 a8 5b b2 e3 b9 0a 4e 5d b1 9d b2 38 fd 38 50 4d 3e dd 0e d8 61 b7 52 e6 cf d5 f5 b6 ad ba ed 56 4c 93 64 1c 76 7c e8 ed 95 a7 01 1e fb 83 89 4c ce a4 52 ec 96 48 04
+Add randomness: count=4 entropy=3
+random pool - hexdump(len=128): 0f 3d cd ea 98 dd aa b8 3f 21 5f 5a 2b 9f 20 c3 c7 b8 92 9b 8d b8 c1 55 f8 df e0 8a b8 59 28 29 ae 3a e7 ff 95 58 5f cb 64 13 fa e0 5b 29 3d e3 54 8b 8c e5 4e b7 cb 3b 24 dd 69 92 ea e2 70 36 a0 71 18 45 2d 78 13 ec 50 a8 5b b2 e3 b9 0a 4e 5d b1 9d b2 38 fd 38 50 4d 3e dd 0e d8 61 b7 52 e6 cf d5 f5 b6 ad ba ed 56 4c 93 64 1c 76 7c e8 ed 95 a7 01 1e fb 83 89 4c ce a4 52 ec 96 48 04
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 f0 57 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): af 00 a4 b9 0b
+random pool - hexdump(len=128): 10 1a e5 07 98 dd aa b8 3f 21 5f 5a 2b 9f 20 c3 c7 b8 92 9b 8d b8 c1 55 f8 df e0 8a b8 59 28 29 ae 3a e7 ff 95 58 5f cb 64 13 fa e0 5b 29 3d e3 af 7e 0d 93 18 4d a1 2f aa 6a fb ca 9f e8 bf 00 a2 ee 1c 5e 8d e2 d4 7e 4e 62 4c 00 1a 85 53 94 9b d1 cf 21 af 1b 8d b2 43 29 8f 9e 9d 1d 81 e4 24 c7 cf b8 86 71 e2 4c 40 66 36 bc de e6 ce e2 90 3f 87 64 4d a6 63 fb eb 5a 51 f9 7b 54 29 a2
+Add randomness: count=5 entropy=4
+random pool - hexdump(len=128): 10 1a e5 07 98 dd aa b8 3f 21 5f 5a 2b 9f 20 c3 c7 b8 92 9b 8d b8 c1 55 f8 df e0 8a b8 59 28 29 ae 3a e7 ff 95 58 5f cb 64 13 fa e0 5b 29 3d e3 af 7e 0d 93 18 4d a1 2f aa 6a fb ca 9f e8 bf 00 a2 ee 1c 5e 8d e2 d4 7e 4e 62 4c 00 1a 85 53 94 9b d1 cf 21 af 1b 8d b2 43 29 8f 9e 9d 1d 81 e4 24 c7 cf b8 86 71 e2 4c 40 66 36 bc de e6 ce e2 90 3f 87 64 4d a6 63 fb eb 5a 51 f9 7b 54 29 a2
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 a0 58 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): ad 00 a4 b9 0b
+random pool - hexdump(len=128): 67 7a cd 06 69 9c 15 3e 47 75 ee 61 76 4c 28 1c 18 a3 f2 f8 9f 10 c7 84 bb f7 4a 41 30 88 99 58 b8 58 65 a2 da 33 f2 5b df 06 a6 fb 1d 56 d6 f4 af 7e 0d 93 18 4d a1 2f aa 6a fb ca 9f e8 bf 00 a2 ee 1c 5e 8d e2 d4 7e 4e 62 4c 00 1a 85 53 94 9b d1 cf 21 af 1b 8d b2 43 29 8f 9e b1 ce da 56 ac c2 58 e4 46 ad 34 6a 61 04 03 4e 6b 30 f9 d6 6e cf 9c c6 ed d6 c9 c1 75 04 e9 d5 5c ad e5 4f
+Add randomness: count=6 entropy=5
+random pool - hexdump(len=128): 67 7a cd 06 69 9c 15 3e 47 75 ee 61 76 4c 28 1c 18 a3 f2 f8 9f 10 c7 84 bb f7 4a 41 30 88 99 58 b8 58 65 a2 da 33 f2 5b df 06 a6 fb 1d 56 d6 f4 af 7e 0d 93 18 4d a1 2f aa 6a fb ca 9f e8 bf 00 a2 ee 1c 5e 8d e2 d4 7e 4e 62 4c 00 1a 85 53 94 9b d1 cf 21 af 1b 8d b2 43 29 8f 9e b1 ce da 56 ac c2 58 e4 46 ad 34 6a 61 04 03 4e 6b 30 f9 d6 6e cf 9c c6 ed d6 c9 c1 75 04 e9 d5 5c ad e5 4f
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 50 59 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): ab 00 a4 b9 0b
+random pool - hexdump(len=128): 67 7a cd 06 69 9c 15 3e aa e3 7a 5e 80 8f 47 19 03 c7 ce 4c ab 43 b5 17 cd 06 a4 f1 ed a5 ee 2c df fb b3 ff 6b 22 d8 b5 41 2f 08 69 45 d5 87 a8 82 3e 3d 24 d3 30 34 a9 9b 97 9d de f9 4a 6a a2 2e 48 57 17 d1 c0 c1 64 f5 c1 94 35 92 35 25 c9 ef 6b bf 6c 5f 61 5f 2d ff 4d fe 82 b1 ce da 56 ac c2 58 e4 46 ad 34 6a 61 04 03 4e 6b 30 f9 d6 6e cf 9c c6 ed d6 c9 c1 75 04 e9 d5 5c ad e5 4f
+Add randomness: count=7 entropy=6
+random pool - hexdump(len=128): 67 7a cd 06 69 9c 15 3e aa e3 7a 5e 80 8f 47 19 03 c7 ce 4c ab 43 b5 17 cd 06 a4 f1 ed a5 ee 2c df fb b3 ff 6b 22 d8 b5 41 2f 08 69 45 d5 87 a8 82 3e 3d 24 d3 30 34 a9 9b 97 9d de f9 4a 6a a2 2e 48 57 17 d1 c0 c1 64 f5 c1 94 35 92 35 25 c9 ef 6b bf 6c 5f 61 5f 2d ff 4d fe 82 b1 ce da 56 ac c2 58 e4 46 ad 34 6a 61 04 03 4e 6b 30 f9 d6 6e cf 9c c6 ed d6 c9 c1 75 04 e9 d5 5c ad e5 4f
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 1a 5a 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 4f 00 a7 ba 9d
+random pool - hexdump(len=128): 7d f2 d7 ca 32 ab a8 23 aa e3 7a 5e 80 8f 47 19 03 c7 ce 4c ab 43 b5 17 cd 06 a4 f1 ed a5 ee 2c df fb b3 ff 6b 22 d8 b5 41 2f 08 69 45 d5 87 a8 82 3e 3d 24 af 1d ae c3 42 a9 70 1a 4e 33 4e b2 b2 ba a5 d6 e2 3d 68 cc 15 85 c2 2b 2b 21 7d 3e be 8e e6 fe 02 62 3a 60 6f 0e 3e 02 93 44 ef ec da b6 19 9e 05 04 c2 91 39 8a 29 b9 f7 ea 21 e9 b0 94 a5 96 78 da 70 4d c8 13 8e 11 45 9c dc bb
+Add randomness: count=8 entropy=7
+random pool - hexdump(len=128): 7d f2 d7 ca 32 ab a8 23 aa e3 7a 5e 80 8f 47 19 03 c7 ce 4c ab 43 b5 17 cd 06 a4 f1 ed a5 ee 2c df fb b3 ff 6b 22 d8 b5 41 2f 08 69 45 d5 87 a8 82 3e 3d 24 af 1d ae c3 42 a9 70 1a 4e 33 4e b2 b2 ba a5 d6 e2 3d 68 cc 15 85 c2 2b 2b 21 7d 3e be 8e e6 fe 02 62 3a 60 6f 0e 3e 02 93 44 ef ec da b6 19 9e 05 04 c2 91 39 8a 29 b9 f7 ea 21 e9 b0 94 a5 96 78 da 70 4d c8 13 8e 11 45 9c dc bb
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 ce 5a 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 90 00 a7 cb 9b
+random pool - hexdump(len=128): f4 e2 24 05 da 81 23 46 e6 6c fd 76 30 9c 5b d5 98 cb 7a 85 9a 61 0f 6c 1b 85 33 7e c2 c9 6c f8 7c 78 8f 32 45 74 16 c8 d4 34 a3 ed 16 cf 64 74 89 7f 7c ab af 1d ae c3 42 a9 70 1a 4e 33 4e b2 b2 ba a5 d6 e2 3d 68 cc 15 85 c2 2b 2b 21 7d 3e be 8e e6 fe 02 62 3a 60 6f 0e 3e 02 93 44 ef ec 24 f3 d3 d3 01 76 97 c8 fa bc e7 6f 31 5f d8 e0 94 43 b8 ee 65 8d c0 62 2d c0 0f 3c 3d 39 29 58
+Add randomness: count=9 entropy=8
+random pool - hexdump(len=128): f4 e2 24 05 da 81 23 46 e6 6c fd 76 30 9c 5b d5 98 cb 7a 85 9a 61 0f 6c 1b 85 33 7e c2 c9 6c f8 7c 78 8f 32 45 74 16 c8 d4 34 a3 ed 16 cf 64 74 89 7f 7c ab af 1d ae c3 42 a9 70 1a 4e 33 4e b2 b2 ba a5 d6 e2 3d 68 cc 15 85 c2 2b 2b 21 7d 3e be 8e e6 fe 02 62 3a 60 6f 0e 3e 02 93 44 ef ec 24 f3 d3 d3 01 76 97 c8 fa bc e7 6f 31 5f d8 e0 94 43 b8 ee 65 8d c0 62 2d c0 0f 3c 3d 39 29 58
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 7d 5b 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 4f 00 a4 b1 0b
+random pool - hexdump(len=128): f4 e2 24 05 da 81 23 46 e6 6c fd 76 9b c4 33 bd 6a 73 55 86 5f cf 4e 26 f4 23 e8 8d 15 ed e0 5f 53 57 70 99 ba 63 05 d1 a0 ad d3 1e 12 85 a8 ad 6d be 0b ed d2 81 40 cf a7 a7 bf 61 f6 4a 55 3e f2 d6 26 45 57 24 30 dc 8a 64 cd 08 22 cf 55 75 f4 bd 37 30 b6 85 f0 35 5c d1 3e 55 d7 1c e6 1a 24 f3 d3 d3 01 76 97 c8 fa bc e7 6f 31 5f d8 e0 94 43 b8 ee 65 8d c0 62 2d c0 0f 3c 3d 39 29 58
+Add randomness: count=10 entropy=9
+random pool - hexdump(len=128): f4 e2 24 05 da 81 23 46 e6 6c fd 76 9b c4 33 bd 6a 73 55 86 5f cf 4e 26 f4 23 e8 8d 15 ed e0 5f 53 57 70 99 ba 63 05 d1 a0 ad d3 1e 12 85 a8 ad 6d be 0b ed d2 81 40 cf a7 a7 bf 61 f6 4a 55 3e f2 d6 26 45 57 24 30 dc 8a 64 cd 08 22 cf 55 75 f4 bd 37 30 b6 85 f0 35 5c d1 3e 55 d7 1c e6 1a 24 f3 d3 d3 01 76 97 c8 fa bc e7 6f 31 5f d8 e0 94 43 b8 ee 65 8d c0 62 2d c0 0f 3c 3d 39 29 58
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 2d 5c 01 00 00 00 00 00
+random_mix_pool - hexdump(len=5): 4d 00 a4 b1 0b
+random pool - hexdump(len=128): 6d c4 47 fb 74 91 51 d3 17 d2 17 c8 9b c4 33 bd 6a 73 55 86 5f cf 4e 26 f4 23 e8 8d 15 ed e0 5f 53 57 70 99 ba 63 05 d1 a0 ad d3 1e 12 85 a8 ad 6d be 0b ed d2 81 40 cf 88 c0 41 2c 1d bc e1 a2 64 3e c5 af 2a aa 0b b5 45 5d a6 20 56 14 e6 3a 61 21 62 04 d8 4a 2c 7a 04 ef 79 51 7d 65 47 d5 ea 61 2c 02 41 15 c8 77 01 b7 87 3e c7 de d2 59 27 dd 6a 51 fa ce 85 bb 8a 27 92 53 22 10 56 dd
+wlp2s0: New scan results available (own=1 ext=0)
+wlp2s0: Radio work 'scan'@0x564f371cd240 done in 3.101926 seconds
+wlp2s0: radio_work_free('scan'@0x564f371cd240): num_active_works --> 0
+wlp2s0: Selecting BSS from priority group 0
+wlp2s0: 0: 6c:19:8f:83:c2:80 ssid='NOOBLABS' wpa_ie_len=28 rsn_ie_len=24 caps=0x111 level=-52 freq=5260 
+wlp2s0:    selected based on RSN IE
+wlp2s0:    selected BSS 6c:19:8f:83:c2:80 ssid='NOOBLABS'
+wlp2s0: Considering connect request: reassociate: 0  selected: 6c:19:8f:83:c2:80  bssid: 00:00:00:00:00:00  pending: 00:00:00:00:00:00  wpa_state: SCANNING  ssid=0x564f371a3110  current_ssid=(nil)
+wlp2s0: Request association with 6c:19:8f:83:c2:80
+wlp2s0: No ongoing scan/p2p-scan found to abort
+wlp2s0: Add radio work 'sme-connect'@0x564f371cd240
+wlp2s0: First radio work item in the queue - schedule start immediately
+wlp2s0: RSN: added PMKSA cache candidate 6c:19:8f:83:c2:80 prio 1000
+wlp2s0: RSN: processing PMKSA candidate list
+wlp2s0: RSN: not in suitable state for new pre-authentication
+wlp2s0: Starting radio work 'sme-connect'@0x564f371cd240 after 0.000142 second wait
+wlp2s0: WPA: clearing own WPA/RSN IE
+wlp2s0: Automatic auth_alg selection: 0x1
+RSN: PMKSA cache search - network_ctx=(nil) try_opportunistic=0 akmp=0x0
+RSN: Search for BSSID 6c:19:8f:83:c2:80
+RSN: No PMKSA cache entry found
+wlp2s0: RSN: using IEEE 802.11i/D9.0
+wlp2s0: WPA: Selected cipher suites: group 8 pairwise 24 key_mgmt 1 proto 2
+WPA: set AP WPA IE - hexdump(len=30): dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00
+WPA: set AP RSN IE - hexdump(len=26): 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00
+wlp2s0: WPA: AP group 0x8 network profile group 0x18; available group 0x8
+wlp2s0: WPA: using GTK TKIP
+wlp2s0: WPA: AP pairwise 0x18 network profile pairwise 0x18; available pairwise 0x18
+wlp2s0: WPA: using PTK CCMP
+wlp2s0: WPA: AP key_mgmt 0x1 network profile key_mgmt 0x9; available key_mgmt 0x1
+wlp2s0: WPA: using KEY_MGMT 802.1X
+WPA: Set own WPA IE default - hexdump(len=22): 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00
+WPA: No current PMKSA - clear PMK
+RRM: Determining whether RRM can be used - device support: 0x79
+RRM: No RRM in network
+Added supported operating classes IE - hexdump(len=19): 3b 11 76 51 53 54 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 7f
+EAPOL: External notification - EAP success=0
+EAPOL: External notification - EAP fail=0
+EAPOL: External notification - portControl=Auto
+wlp2s0: Cancelling scan request
+wlp2s0: SME: Trying to authenticate with 6c:19:8f:83:c2:80 (SSID='NOOBLABS' freq=5260 MHz)
+EAPOL: External notification - portValid=0
+wlp2s0: State: SCANNING -> AUTHENTICATING
+nl80211: Authenticate (ifindex=3)
+  * bssid=6c:19:8f:83:c2:80
+  * freq=5260
+  * SSID=NOOBLABS
+  * IEs - hexdump(len=0): [NULL]
+  * Auth Type 0
+nl80211: Authentication request send successfully
+nl80211: Event message available
+nl80211: Drv Event 19 (NL80211_CMD_NEW_STATION) received for wlp2s0
+nl80211: New station 6c:19:8f:83:c2:80
+nl80211: Event message available
+nl80211: Drv Event 37 (NL80211_CMD_AUTHENTICATE) received for wlp2s0
+nl80211: MLME event 37 (NL80211_CMD_AUTHENTICATE) on wlp2s0(28:16:ad:c7:03:b2) A1=28:16:ad:c7:03:b2 A2=6c:19:8f:83:c2:80
+nl80211: MLME event frame - hexdump(len=41): b0 00 3c 00 28 16 ad c7 03 b2 6c 19 8f 83 c2 80 6c 19 8f 83 c2 80 50 16 00 00 02 00 00 00 dd 09 00 10 18 02 00 00 0c 00 00
+nl80211: Authenticate event
+wlp2s0: Event AUTH (10) received
+wlp2s0: SME: Authentication response: peer=6c:19:8f:83:c2:80 auth_type=0 auth_transaction=2 status_code=0
+SME: Authentication response IEs - hexdump(len=11): dd 09 00 10 18 02 00 00 0c 00 00
+SME: Association Request IEs - hexdump(len=51): 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00 7f 08 04 00 00 00 00 00 00 40 3b 11 76 51 53 54 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 7f
+wlp2s0: Trying to associate with 6c:19:8f:83:c2:80 (SSID='NOOBLABS' freq=5260 MHz)
+wlp2s0: State: AUTHENTICATING -> ASSOCIATING
+nl80211: Set wlp2s0 operstate 0->0 (DORMANT)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=5 (IF_OPER_DORMANT)
+WPA: set own WPA/RSN IE - hexdump(len=22): 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00
+nl80211: Associate (ifindex=3)
+  * bssid=6c:19:8f:83:c2:80
+  * freq=5260
+  * SSID=NOOBLABS
+  * IEs - hexdump(len=51): 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00 7f 08 04 00 00 00 00 00 00 40 3b 11 76 51 53 54 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 7f
+  * WPA Versions 0x2
+  * pairwise=0xfac04
+  * group=0xfac02
+  * akm=0xfac01
+nl80211: Association request send successfully
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 wext ifi_family=0 ifi_flags=0x11003 ([UP][LOWER_UP])
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 wext ifi_family=0 ifi_flags=0x11003 ([UP][LOWER_UP])
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 operstate=5 linkmode=1 ifi_family=0 ifi_flags=0x11003 ([UP][LOWER_UP])
+nl80211: Event message available
+nl80211: Drv Event 38 (NL80211_CMD_ASSOCIATE) received for wlp2s0
+nl80211: MLME event 38 (NL80211_CMD_ASSOCIATE) on wlp2s0(28:16:ad:c7:03:b2) A1=28:16:ad:c7:03:b2 A2=6c:19:8f:83:c2:80
+nl80211: MLME event frame - hexdump(len=148): 10 00 3c 00 28 16 ad c7 03 b2 6c 19 8f 83 c2 80 6c 19 8f 83 c2 80 60 16 11 01 00 00 01 c0 01 08 8c 12 98 24 b0 48 60 6c 2d 1a 6e 08 1f ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 01 01 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 dd 09 00 10 18 02 00 00 0c 00 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: Associate event
+nl80211: Associated on 5260 MHz
+nl80211: Associated with 6c:19:8f:83:c2:80
+nl80211: Set drv->ssid based on scan res info to 'NOOBLABS'
+wlp2s0: Event ASSOC (0) received
+wlp2s0: Association info event
+resp_ies - hexdump(len=118): 01 08 8c 12 98 24 b0 48 60 6c 2d 1a 6e 08 1f ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3d 16 34 0d 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 01 01 4a 0e 14 00 0a 00 2c 01 c8 00 14 00 05 00 19 00 dd 09 00 10 18 02 00 00 0c 00 00 dd 18 00 50 f2 02 01 01 80 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+wlp2s0: freq=5260 MHz
+wlp2s0: State: ASSOCIATING -> ASSOCIATED
+nl80211: Set wlp2s0 operstate 0->0 (DORMANT)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=5 (IF_OPER_DORMANT)
+wlp2s0: Associated to a new BSS: BSSID=6c:19:8f:83:c2:80
+Add randomness: count=11 entropy=10
+random pool - hexdump(len=128): 6d c4 47 fb 74 91 51 d3 17 d2 17 c8 9b c4 33 bd 6a 73 55 86 5f cf 4e 26 f4 23 e8 8d 15 ed e0 5f 53 57 70 99 ba 63 05 d1 a0 ad d3 1e 12 85 a8 ad 6d be 0b ed d2 81 40 cf 88 c0 41 2c 1d bc e1 a2 64 3e c5 af 2a aa 0b b5 45 5d a6 20 56 14 e6 3a 61 21 62 04 d8 4a 2c 7a 04 ef 79 51 7d 65 47 d5 ea 61 2c 02 41 15 c8 77 01 b7 87 3e c7 de d2 59 27 dd 6a 51 fa ce 85 bb 8a 27 92 53 22 10 56 dd
+random_mix_pool - hexdump(len=16): 93 ad 4a 5e 00 00 00 00 52 b8 01 00 00 00 00 00
+random_mix_pool - hexdump(len=6): 6c 19 8f 83 c2 80
+random pool - hexdump(len=128): 57 0b 77 6e d6 78 2e 41 39 b2 ff 4f 43 7b 56 fa ae d1 73 d0 3a 71 8d f0 9d 29 1a 53 69 bc 97 69 3c c7 51 79 18 3e f9 8f 84 d7 de 09 40 8b c5 32 23 4e 83 0c bb 8b 9f d0 88 c0 41 2c 1d bc e1 a2 64 3e c5 af 2a aa 0b b5 45 5d a6 20 56 14 e6 3a 61 21 62 04 d8 4a 2c 7a 04 ef 79 51 7d 65 47 d5 6d 32 f7 bf 96 0f f5 60 a8 4e 1b 2b 07 9a 70 b5 dc 67 3a e2 64 a7 4a 20 22 7d 5b e0 28 d4 09 e2
+wlp2s0: Associated with 6c:19:8f:83:c2:80
+wlp2s0: WPA: Association event - clear replay counter
+wlp2s0: WPA: Clear old PTK
+EAPOL: External notification - portEnabled=0
+EAPOL: External notification - portValid=0
+EAPOL: External notification - portEnabled=1
+EAPOL: SUPP_PAE entering state CONNECTING
+EAPOL: enable timer tick
+EAPOL: SUPP_BE entering state IDLE
+EAP: EAP entering state INITIALIZE
+EAP: EAP entering state IDLE
+wlp2s0: Setting authentication timeout: 10 sec 0 usec
+wlp2s0: Cancelling scan request
+IEEE 802.11 element parse ignored unknown element (id=74 elen=14)
+unknown vendor specific information element ignored (vendor OUI 00:10:18 len=9)
+WMM AC: AC mandatory: AC_BE=0 AC_BK=0 AC_VI=0 AC_VO=0
+WMM AC: U-APSD queues=0x0
+WMM AC: Valid WMM association, WMM AC is enabled
+wlp2s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+nl80211: Event message available
+nl80211: Drv Event 46 (NL80211_CMD_CONNECT) received for wlp2s0
+nl80211: Ignore connect event (cmd=46) when using userspace SME
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=14
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=14): 01 00 00 0a 01 00 00 0a 01 68 65 6c 6c 6f
+wlp2s0: Setting authentication timeout: 70 sec 0 usec
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_PAE entering state RESTART
+EAP: EAP entering state INITIALIZE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_PAE entering state AUTHENTICATING
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Request id=0 method=1 vendor=0 vendorMethod=0
+EAP: EAP entering state IDENTITY
+wlp2s0: CTRL-EVENT-EAP-STARTED EAP authentication started
+EAP: Status notification: started (param=)
+EAP: EAP-Request Identity data - hexdump_ascii(len=5):
+     68 65 6c 6c 6f                                    hello           
+EAP: using real identity - hexdump_ascii(len=5):
+     72 6f 68 69 74                                    rohit           
+EAP: EAP entering state SEND_RESPONSE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_BE entering state RESPONSE
+EAPOL: txSuppRsp
+TX EAPOL: dst=6c:19:8f:83:c2:80
+TX EAPOL - hexdump(len=14): 01 00 00 0a 02 00 00 0a 01 72 6f 68 69 74
+EAPOL: SUPP_BE entering state RECEIVE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=10
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=10): 01 00 00 06 01 01 00 06 0d 20
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Request id=1 method=13 vendor=0 vendorMethod=0
+EAP: EAP entering state GET_METHOD
+wlp2s0: CTRL-EVENT-EAP-PROPOSED-METHOD vendor=0 method=13
+EAP: Status notification: accept proposed method (param=TLS)
+EAP: Initialize selected EAP method: vendor 0 method 13 (TLS)
+TLS: using phase1 config options
+TLS: Trusted root certificate(s) loaded
+OpenSSL: SSL_use_certificate_chain_file --> OK
+OpenSSL: tls_use_private_key_file (PEM) --> loaded
+SSL: Private key loaded successfully
+wlp2s0: CTRL-EVENT-EAP-METHOD EAP vendor 0 method 13 (TLS) selected
+EAP: EAP entering state METHOD
+SSL: Received packet(len=6) - Flags 0x20
+EAP-TLS: Start
+SSL: (where=0x10 ret=0x1)
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:before SSL initialization
+OpenSSL: TX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 16 03 01 00 fc
+OpenSSL: TX ver=0x304 content_type=22 (handshake/client hello)
+OpenSSL: Message - hexdump(len=252): 01 00 00 f8 03 03 47 ce 81 62 a8 72 da d5 4d cb f8 a0 86 7a 2d fe 8c b1 37 84 51 36 b9 8c e2 1f bf 4b 9b de e8 6a 00 00 3e 13 02 13 03 13 01 c0 2c c0 30 00 9f cc a9 cc a8 cc aa c0 2b c0 2f 00 9e c0 24 c0 28 00 6b c0 23 c0 27 00 67 c0 0a c0 14 00 39 c0 09 c0 13 00 33 00 9d 00 9c 00 3d 00 3c 00 35 00 2f 00 ff 01 00 00 91 00 0b 00 04 03 00 01 02 00 0a 00 0c 00 0a 00 1d 00 17 00 1e 00 19 00 18 00 16 00 00 00 17 00 00 00 0d 00 30 00 2e 04 03 05 03 06 03 08 07 08 08 08 09 08 0a 08 0b 08 04 08 05 08 06 04 01 05 01 06 01 03 03 02 03 03 01 02 01 03 02 02 02 04 02 05 02 06 02 00 2b 00 09 08 03 04 03 03 03 02 03 01 00 2d 00 02 01 01 00 33 00 26 00 24 00 1d 00 20 ad 7b 11 97 d9 6a 7f 6d e7 f0 8d 6b 3f 2a 34 94 62 b1 1f 9a 64 00 bd 6a 91 27 c4 f8 50 b5 bf 26
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS write client hello
+SSL: (where=0x1002 ret=0xffffffff)
+SSL: SSL_connect:error in SSLv3/TLS write client hello
+SSL: SSL_connect - want more data
+SSL: 257 bytes pending from ssl_out
+SSL: Using TLS version TLSv1.3
+SSL: 257 bytes left to be sent out (of total 257 bytes)
+EAP: method process -> ignore=FALSE methodState=MAY_CONT decision=FAIL eapRespData=0x564f371de4f0
+EAP: EAP entering state SEND_RESPONSE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_BE entering state RESPONSE
+EAPOL: txSuppRsp
+TX EAPOL: dst=6c:19:8f:83:c2:80
+TX EAPOL - hexdump(len=267): 01 00 01 07 02 01 01 07 0d 00 16 03 01 00 fc 01 00 00 f8 03 03 47 ce 81 62 a8 72 da d5 4d cb f8 a0 86 7a 2d fe 8c b1 37 84 51 36 b9 8c e2 1f bf 4b 9b de e8 6a 00 00 3e 13 02 13 03 13 01 c0 2c c0 30 00 9f cc a9 cc a8 cc aa c0 2b c0 2f 00 9e c0 24 c0 28 00 6b c0 23 c0 27 00 67 c0 0a c0 14 00 39 c0 09 c0 13 00 33 00 9d 00 9c 00 3d 00 3c 00 35 00 2f 00 ff 01 00 00 91 00 0b 00 04 03 00 01 02 00 0a 00 0c 00 0a 00 1d 00 17 00 1e 00 19 00 18 00 16 00 00 00 17 00 00 00 0d 00 30 00 2e 04 03 05 03 06 03 08 07 08 08 08 09 08 0a 08 0b 08 04 08 05 08 06 04 01 05 01 06 01 03 03 02 03 03 01 02 01 03 02 02 02 04 02 05 02 06 02 00 2b 00 09 08 03 04 03 03 03 02 03 01 00 2d 00 02 01 01 00 33 00 26 00 24 00 1d 00 20 ad 7b 11 97 d9 6a 7f 6d e7 f0 8d 6b 3f 2a 34 94 62 b1 1f 9a 64 00 bd 6a 91 27 c4 f8 50 b5 bf 26
+EAPOL: SUPP_BE entering state RECEIVE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=1407
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=1407): 01 00 05 7b 01 02 05 7b 0d c0 00 00 05 e3 16 03 03 00 5a 02 00 00 56 03 03 9d 4b 7d 60 97 25 60 7b e4 f8 6d 9f 4e 6b f2 f2 38 4e ec 40 fc df 21 cf 9c 4c 82 08 0e 8f c1 f7 00 13 02 00 00 2e 00 2b 00 02 03 04 00 33 00 24 00 1d 00 20 e7 e3 f4 e1 fc b9 e2 35 76 fd 8a 8e 1c 72 de d4 1b b5 34 cb 50 f0 ce f1 09 03 ae f7 c9 43 6e 09 17 03 03 00 17 05 a0 6c 51 e8 04 b6 f0 c2 06 76 b9 09 75 ee e8 ef 55 b8 10 cd 68 08 17 03 03 00 ad b5 ff fe 70 6b 11 71 e6 88 95 12 bb d6 18 c5 59 19 3e e0 10 e7 32 bc 69 81 ca 3f d0 46 b4 bc 84 51 6d 32 70 9c d2 b4 3e e8 0d 43 43 1e 18 94 f5 2a 97 84 f0 8e ae 71 4d dc e4 72 49 e9 7d 4f e3 0a a2 51 4d 33 e4 39 4c b0 0c a9 c6 ad 75 d4 05 b3 aa a6 a1 2c 88 02 dd e3 b3 46 fa 61 c9 cc 96 03 ad b5 dd 7c cd 9d 34 85 db 3b 59 d5 50 99 30 06 38 03 71 0a f3 e2 33 e2 4a 03 76 d5 c2 bf 5a 2b fc 93 ca 65 41 07 92 ec c0 15 b9 71 ec 95 f5 5c b7 cb 7f 09 71 8f 2e ca 4d 77 0f 53 52 f2 83 f2 bd ab ea ce a8 64 7f ef b7 6a 1b 38 17 03 03 04 02 72 36 b3 0c 5a ef 45 b1 f2 59 10 38 d1 88 ab e4 2e 0f c4 cd 1d a0 ee e2 65 58 11 92 34 e9 2a 3b 46 e1 eb 6c c4 e4 ce de e7 92 d7 d7 57 4e ff 42 70 f0 43 5f 4f 20 da 59 53 b4 1c 58 70 fb 85 39 58 cb ea 73 0b dd c4 de 12 58 12 2d 9f 16 1d ab d6 11 8c 2c 51 7b 50 da c0 ee 5c 44 96 a2 8f 27 53 b2 d6 b0 fe 22 9b 82 52 34 fd 14 24 d5 75 e7 0f 24 8e 24 8f 01 a3 6a c2 15 de a0 8f f8 58 c9 76 28 b4 c0 5a 6f ac 2a 9c 8a b4 69 74 4d 0c c7 39 59 a2 7f fe f8 23 76 91 00 cd ae f1 bb a4 ea 37 0e 9c 95 32 21 b3 62 32 c8 20 bf fa 4b b8 0f 56 07 f3 2a 58 42 e6 08 da 07 ad 12 1e eb f6 8f 19 8f be f6 8f 4d d0 73 c4 94 ee 4d c2 15 9d c2 6a 7f fd 5a 34 46 a2 f7 c5 2d 02 06 51 8c 5f 39 a8 84 67 e0 41 f6 37 b1 93 80 ef b8 61 5e aa f3 3c 37 8f 83 2a c1 24 c3 d9 60 ba 21 91 c7 b6 f8 f7 23 5d 2f 51 fc a9 b8 ec c7 64 6c 0e fa 97 af 67 b2 f8 b5 c3 48 19 48 81 05 a5 a6 f6 46 d1 0c 57 e6 7f f1 8e f4 58 ba 6a 71 0e b2 9a 0d 8a ee 6c 77 77 f1 f8 b1 3f 8d 72 db 85 cc 06 af ec 03 5e de 41 6e 22 e9 82 ee d9 5a ea 52 a7 90 2f 5d 94 8c c9 ae 93 34 5a 11 a2 c4 5f da 4f f5 06 f1 20 8c dc f9 ba 06 c3 22 a7 c6 2e 36 c1 f5 01 1b 32 95 ef e1 51 38 27 25 82 b6 8f 46 65 47 d3 9b 9f 46 b3 7c dc 51 26 35 d0 0a 49 91 a5 14 7b bf 6f af 30 02 49 13 55 a1 48 8a ee f2 6d 49 5d 78 6c 70 30 66 9b 68 76 69 23 c8 8f 13 66 72 7d c3 34 9c d2 18 ea bb 5e 77 88 d3 a3 70 16 40 40 c1 5c 42 0e c6 f4 9b 30 8c 92 75 29 37 c6 cf e4 fc 99 9f 6a 0a 22 98 88 fc 21 a3 c7 3d d9 0c a4 e8 f1 8e a2 81 c5 4c de 5c 50 f8 4b ac 94 aa 48 0a 41 ea dd 05 cd 7f 02 0a db c4 75 76 c0 82 b2 50 0e 45 e3 30 13 46 b3 4e b5 71 45 3d 08 de e4 50 47 5e a8 f7 fc bd 40 e5 e2 1b ab 92 1c 33 37 e8 d8 aa f2 de 0a 3a c5 2e c3 ad 5a 0c 7d f9 0d 1c 41 31 32 39 19 f6 14 88 37 bf 16 56 ff 17 44 e4 9e 18 fd 3a 26 55 89 de 4a c1 63 d3 2b c2 7e 7a 6d 73 4c 2e 1d 03 1d 8d 63 c3 26 18 a3 11 b6 b9 03 4c 66 9f cf 1c 19 f2 59 5d b0 f0 8f 6b f9 c4 3b 3d 6e bd b7 af f6 e4 2f af d4 b8 fa f0 7f a1 02 aa ec a0 a5 bf e0 a9 be dd 3b 93 d9 b3 e9 b7 01 41 95 98 5a 85 ff 42 f3 16 0c aa 72 07 ca 72 65 8d 76 ce ae 18 0f bd 7f 25 47 d3 58 ff 01 26 ca 7a 85 44 d6 33 e4 50 94 c3 ab dd c3 85 0b 83 b4 0b 12 48 5a f4 d2 53 83 72 85 3b 37 e1 15 58 5a ee 10 a1 10 0a e9 b3 f6 e0 2e 08 2c 91 d7 4e 19 7e 4d 1c 96 28 59 d2 85 fb 59 a1 20 fe ec 94 fe 75 60 2b 83 e8 a9 5d 2b b9 c5 1b 71 1e 8c a7 a9 38 9c aa 9c 68 6c 16 c3 22 ab 22 b3 4f 30 26 27 ea 77 9d 9f d0 a5 4a 45 3e ca f5 fb 8f 9a c9 e1 91 ee 99 f4 a0 3b 8b f1 28 71 79 c7 07 ac ba 08 25 f7 af f9 a3 27 a4 08 81 e9 40 a3 1b 90 79 f8 16 fb f8 bb 04 b3 36 68 d9 91 01 6c d7 30 fd eb 5b a2 de 29 80 a8 11 96 df c7 26 d7 79 2f 20 b2 e0 94 ca 78 59 aa cc df 75 22 f4 d6 e6 58 0f 5e b4 76 06 50 b3 56 f5 46 71 9b 14 0b a3 7e 62 9d 95 2b 58 53 ae 04 e1 c8 b2 64 57 cd d5 59 f3 98 24 b6 30 78 48 ce 22 52 37 bf f2 a9 8f e0 32 3e 07 58 cb 1d ca 23 05 ac d7 ec 29 08 3e e7 f2 e7 b8 4b 87 b6 c3 e6 2d 41 91 ed 1d fa fb 59 5f 20 24 ee 94 ab 03 e8 5f 89 1c 53 9d 98 b0 b4 c6 d7 48 38 60 18 85 61 c5 5f 06 07 c7 1d f1 d7 d3 cd ee 82 42 d8 04 59 20 5b 41 3b 2e 3f f9 5b 71 eb 7f 06 d2 ef 16 37 49 dd c9 93 d9 3a 30 f1 b0 17 65 17 03 03 00 60 b4 01 14 ae e3 d8 0c 7b 30 fb 35 69 24 e1 55 85 cd 49 dc b6 23 e0 92 be c8 7f 92 0f da ec e0 5d 61 e6 4c aa de 10 4f b2 a7 7c 2b de 92 6b c1 41 96 53 2d 09 40 19 ac 07
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Request id=2 method=13 vendor=0 vendorMethod=0
+EAP: EAP entering state METHOD
+SSL: Received packet(len=1403) - Flags 0xc0
+SSL: TLS Message Length: 1507
+SSL: Need 114 bytes more input data
+SSL: Building ACK (type=13 id=2 ver=0)
+EAP: method process -> ignore=FALSE methodState=MAY_CONT decision=FAIL eapRespData=0x564f371d74e0
+EAP: EAP entering state SEND_RESPONSE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_BE entering state RESPONSE
+EAPOL: txSuppRsp
+TX EAPOL: dst=6c:19:8f:83:c2:80
+TX EAPOL - hexdump(len=10): 01 00 00 06 02 02 00 06 0d 00
+EAPOL: SUPP_BE entering state RECEIVE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=124
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=124): 01 00 00 78 01 03 00 78 0d 00 0e 0e d1 fe 0d ed ae 3a 00 76 d7 a8 32 13 91 b2 f1 e0 51 1a d4 63 18 14 be 1b 57 a8 5b 78 3a 64 f7 5f 22 03 dc 32 13 bf 17 03 03 00 45 02 67 a8 56 40 7e 27 b4 86 81 a0 a8 a4 f2 e6 e4 b2 90 16 89 21 19 76 3f 49 13 2b 31 55 c3 d8 6d 16 67 2d 69 08 81 e0 db aa 88 66 cc cb 61 7b 97 df 09 bb f9 74 ca 0a 2b d9 25 85 6a a1 81 9c bf 3a b7 31 6d b9
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Request id=3 method=13 vendor=0 vendorMethod=0
+EAP: EAP entering state METHOD
+SSL: Received packet(len=120) - Flags 0x00
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 16 03 03 00 5a
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS write client hello
+OpenSSL: RX ver=0x304 content_type=22 (handshake/server hello)
+OpenSSL: Message - hexdump(len=90): 02 00 00 56 03 03 9d 4b 7d 60 97 25 60 7b e4 f8 6d 9f 4e 6b f2 f2 38 4e ec 40 fc df 21 cf 9c 4c 82 08 0e 8f c1 f7 00 13 02 00 00 2e 00 2b 00 02 03 04 00 33 00 24 00 1d 00 20 e7 e3 f4 e1 fc b9 e2 35 76 fd 8a 8e 1c 72 de d4 1b b5 34 cb 50 f0 ce f1 09 03 ae f7 c9 43 6e 09
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 17
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read server hello
+OpenSSL: RX ver=0x304 content_type=22 (handshake/encrypted extensions)
+OpenSSL: Message - hexdump(len=6): 08 00 00 02 00 00
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 ad
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:TLSv1.3 read encrypted extensions
+OpenSSL: RX ver=0x304 content_type=22 (handshake/certificate request)
+OpenSSL: Message - hexdump(len=156): 0d 00 00 98 00 00 95 00 0d 00 26 00 24 04 03 05 03 06 03 08 07 08 08 08 09 08 0a 08 0b 08 04 08 05 08 06 04 01 05 01 06 01 03 03 02 03 03 01 02 01 00 2f 00 67 00 65 00 63 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 04 02
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read server certificate request
+OpenSSL: RX ver=0x304 content_type=22 (handshake/certificate)
+OpenSSL: Message - hexdump(len=1009): 0b 00 03 ed 00 00 03 e9 00 01 c3 30 82 01 bf 30 82 01 66 02 14 0a da 0d 73 23 b2 29 20 16 95 d4 c3 ca 3a 71 ed 02 f7 b9 13 30 0a 06 08 2a 86 48 ce 3d 04 03 02 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 1e 17 0d 32 30 30 31 31 35 31 33 33 35 33 39 5a 17 0d 32 30 30 37 31 33 31 33 33 35 33 39 5a 30 64 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 20 30 1e 06 09 2a 86 48 86 f7 0d 01 09 01 16 11 61 64 6d 69 6e 40 65 78 61 6d 70 6c 65 2e 63 6f 6d 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 ba fb f9 be ad a2 29 0f fb fa 3a 03 f7 c0 51 fd f8 ea 1e 3b 16 54 b8 a6 01 96 a6 fc b8 6b af e0 7f 89 8e 7f 8d 99 b9 bc 09 63 30 32 46 d2 79 4a 49 2f 0d 99 d6 e9 42 b2 fd d8 b9 e0 cf 41 ba 13 30 0a 06 08 2a 86 48 ce 3d 04 03 02 03 47 00 30 44 02 20 28 3d fb 79 c2 bc 80 e3 26 89 63 83 21 d1 0a 6c 6f 42 57 ba d1 dc f7 81 46 4e 38 09 22 54 ad ed 02 20 02 3d f8 b8 43 0d dc d5 8f 2b 22 b4 65 51 11 43 05 14 10 b3 39 9d 8b 4a e9 65 e7 e8 02 8c 08 a1 00 00 00 02 1c 30 82 02 18 30 82 01 bd a0 03 02 01 02 02 14 29 3b 22 6d ef 27 39 fb 4a 04 86 e6 53 a9 31 5a a7 1c 5b 7d 30 0a 06 08 2a 86 48 ce 3d 04 03 02 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 1e 17 0d 32 30 30 31 31 30 31 32 35 36 35 38 5a 17 0d 32 31 30 31 30 39 31 32 35 36 35 38 5a 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 26 fa d0 b6 f6 e5 c9 10 ee cb 28 4e dc 42 9f 40 61 2d 43 21 f2 cd 0a 5d 7a 89 80 d9 c9 ba 80 c8 5d 13 2a 18 3e ab ec f2 e9 e5 6f 9d 0e c9 d3 c0 a1 d1 f7 dc 36 39 6e 9d 2b 95 c3 05 b4 24 a3 22 a3 53 30 51 30 1d 06 03 55 1d 0e 04 16 04 14 a3 64 cf 91 9a 37 a0 5c 1f 9f 94 c0 7e 84 92 d0 35 57 08 43 30 1f 06 03 55 1d 23 04 18 30 16 80 14 a3 64 cf 91 9a 37 a0 5c 1f 9f 94 c0 7e 84 92 d0 35 57 08 43 30 0f 06 03 55 1d 13 01 01 ff 04 05 30 03 01 01 ff 30 0a 06 08 2a 86 48 ce 3d 04 03 02 03 49 00 30 46 02 21 00 e6 7f c2 bb 09 f1 1c d5 99 fa e7 7f e7 9e 43 a3 b9 a3 b6 fb 9c e3 85 5a d0 7c 05 ee 4c 1a 80 6f 02 21 00 8c 8e e7 50 8a 03 b6 e7 26 89 02 14 ed d9 8b 12 e0 be 44 b1 3d ca 84 2e 6b d7 0c 96 76 38 60 26 00 00
+wlp2s0: CTRL-EVENT-EAP-PEER-CERT depth=1 subject='/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi' hash=b1f73c2344e9928dab007403be44c3dbd20d7d756cea082bb946b0330c6ed9ae
+TLS: tls_verify_cb - preverify_ok=1 err=0 (ok) ca_cert_verify=1 depth=1 buf='/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@aalto.fi'
+wlp2s0: CTRL-EVENT-EAP-PEER-CERT depth=0 subject='/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@example.com' hash=64dd80dfd8267b6f0b9baaf2e32ef84d7dbc67f129726fdb4f10fa435cff93e4
+TLS: tls_verify_cb - preverify_ok=1 err=0 (ok) ca_cert_verify=1 depth=0 buf='/C=FI/ST=Some-State/O=Aalto/CN=rohit/emailAddress=admin@example.com'
+EAP: Status notification: remote certificate verification (param=success)
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 60
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read server certificate
+OpenSSL: RX ver=0x304 content_type=22 (handshake/certificate verify)
+OpenSSL: Message - hexdump(len=79): 0f 00 00 4b 04 03 00 47 30 45 02 21 00 89 65 d4 cc 44 28 33 c5 66 c4 75 4a a7 f5 63 67 7e 88 24 3a 09 50 28 01 fb 1e b2 a0 77 a9 fc 86 02 20 05 63 4b 8d 4b 35 17 36 9e e7 d3 09 e7 6b e0 c9 6b d3 6a a9 21 97 6d f4 ac 7a 29 a9 ee a2 01 61
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 45
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:TLSv1.3 read server certificate verify
+OpenSSL: RX ver=0x304 content_type=22 (handshake/finished)
+OpenSSL: Message - hexdump(len=52): 14 00 00 30 b9 2c 50 1a 43 09 ff 75 d8 ad 3b ab 66 63 79 3e 2e 24 fb 4f 6e 2b 69 0b cc 08 18 24 45 5e 9f 61 87 e2 15 79 59 6c 26 6d 92 bb fe 20 1e 6e 8e ea
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read finished
+OpenSSL: TX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 04 05
+OpenSSL: TX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+OpenSSL: TX ver=0x304 content_type=22 (handshake/certificate)
+OpenSSL: Message - hexdump(len=1012): 0b 00 03 f0 00 00 03 ec 00 01 c6 30 82 01 c2 30 82 01 67 02 14 0a da 0d 73 23 b2 29 20 16 95 d4 c3 ca 3a 71 ed 02 f7 b9 14 30 0a 06 08 2a 86 48 ce 3d 04 03 02 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 1e 17 0d 32 30 30 31 31 35 31 33 34 34 30 32 5a 17 0d 32 30 30 37 31 33 31 33 34 34 30 32 5a 30 65 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 21 30 1f 06 09 2a 86 48 86 f7 0d 01 09 01 16 12 61 64 6d 69 6e 73 40 65 78 61 6d 70 6c 65 2e 63 6f 6d 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 f1 2a 7a 40 be 03 ef fd e0 eb 37 39 12 b6 f4 d6 dc fe 51 9a 2f df 17 64 6e 52 6f 15 19 2c ed 78 66 83 c6 d2 29 16 29 a4 ac 0c e5 7c 98 76 5b 43 54 6d 1b 6a 15 83 12 ae b5 bf d0 a2 9c bc 00 50 30 0a 06 08 2a 86 48 ce 3d 04 03 02 03 49 00 30 46 02 21 00 9d 19 b0 a3 f6 e6 84 d1 d0 7f 47 3b 51 c8 6d 21 1a 20 58 f9 62 43 82 af 37 da 35 8b 04 74 49 62 02 21 00 ad 5c 57 21 9a ef 4a f3 f1 b1 4c a2 79 2e 7d 41 7b 09 f7 af 40 79 4a a2 6a 4a ea 2b 88 96 e8 60 00 00 00 02 1c 30 82 02 18 30 82 01 bd a0 03 02 01 02 02 14 29 3b 22 6d ef 27 39 fb 4a 04 86 e6 53 a9 31 5a a7 1c 5b 7d 30 0a 06 08 2a 86 48 ce 3d 04 03 02 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 1e 17 0d 32 30 30 31 31 30 31 32 35 36 35 38 5a 17 0d 32 31 30 31 30 39 31 32 35 36 35 38 5a 30 61 31 0b 30 09 06 03 55 04 06 13 02 46 49 31 13 30 11 06 03 55 04 08 0c 0a 53 6f 6d 65 2d 53 74 61 74 65 31 0e 30 0c 06 03 55 04 0a 0c 05 41 61 6c 74 6f 31 0e 30 0c 06 03 55 04 03 0c 05 72 6f 68 69 74 31 1d 30 1b 06 09 2a 86 48 86 f7 0d 01 09 01 16 0e 61 64 6d 69 6e 40 61 61 6c 74 6f 2e 66 69 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00 04 26 fa d0 b6 f6 e5 c9 10 ee cb 28 4e dc 42 9f 40 61 2d 43 21 f2 cd 0a 5d 7a 89 80 d9 c9 ba 80 c8 5d 13 2a 18 3e ab ec f2 e9 e5 6f 9d 0e c9 d3 c0 a1 d1 f7 dc 36 39 6e 9d 2b 95 c3 05 b4 24 a3 22 a3 53 30 51 30 1d 06 03 55 1d 0e 04 16 04 14 a3 64 cf 91 9a 37 a0 5c 1f 9f 94 c0 7e 84 92 d0 35 57 08 43 30 1f 06 03 55 1d 23 04 18 30 16 80 14 a3 64 cf 91 9a 37 a0 5c 1f 9f 94 c0 7e 84 92 d0 35 57 08 43 30 0f 06 03 55 1d 13 01 01 ff 04 05 30 03 01 01 ff 30 0a 06 08 2a 86 48 ce 3d 04 03 02 03 49 00 30 46 02 21 00 e6 7f c2 bb 09 f1 1c d5 99 fa e7 7f e7 9e 43 a3 b9 a3 b6 fb 9c e3 85 5a d0 7c 05 ee 4c 1a 80 6f 02 21 00 8c 8e e7 50 8a 03 b6 e7 26 89 02 14 ed d9 8b 12 e0 be 44 b1 3d ca 84 2e 6b d7 0c 96 76 38 60 26 00 00
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS write client certificate
+OpenSSL: TX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 5f
+OpenSSL: TX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+OpenSSL: TX ver=0x304 content_type=22 (handshake/certificate verify)
+OpenSSL: Message - hexdump(len=78): 0f 00 00 4a 04 03 00 46 30 44 02 20 4f c1 6b 02 8b 16 04 64 74 58 a0 c7 32 7a 63 aa 24 a8 c9 63 5f af 4b 26 76 8b 69 bb da ab 41 3b 02 20 17 02 4a 59 fd 71 ae 6e fd 5e c1 00 95 b0 98 ac 2c ad ea 31 9e f9 90 64 0b 37 58 8e a9 6a 58 7e
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS write certificate verify
+OpenSSL: TX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 45
+OpenSSL: TX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+OpenSSL: TX ver=0x304 content_type=22 (handshake/finished)
+OpenSSL: Message - hexdump(len=52): 14 00 00 30 af 2d 5c 54 83 f7 06 50 74 a8 c5 79 32 bd 26 32 84 1f 86 75 0c 60 f9 75 bd 19 71 27 59 19 65 2d 2e c4 59 0a 4d 76 e5 4b 09 27 67 19 30 2f 7c 99
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS write finished
+SSL: (where=0x20 ret=0x1)
+SSL: (where=0x1002 ret=0x1)
+SSL: 1208 bytes pending from ssl_out
+OpenSSL: Handshake finished - resumed=0
+SSL: No Application Data included
+SSL: Using TLS version TLSv1.3
+SSL: 1208 bytes left to be sent out (of total 1208 bytes)
+EAP-TLS: Done
+EAP-TLS: Derived key - hexdump(len=64): c0 19 f6 d2 2c ba e5 8e 26 64 70 b5 a3 d4 8f df 24 93 a8 36 64 40 da eb 30 18 f1 b9 64 c9 27 f2 9f c2 d5 00 51 6d 6e ea 36 5e 57 c2 26 9e 64 71 10 eb c8 6a 57 4a 19 e8 db a9 b2 ea 21 76 ae 94
+EAP-TLS: Derived EMSK - hexdump(len=64): 11 bb cb 75 a8 05 65 c9 7a ca a8 7c 06 c9 e9 52 54 34 5e 36 4f d6 1f b9 a4 b1 60 20 2c 2a ed 4f 57 42 90 f3 75 71 a8 25 1c 98 66 a3 9d 9d b0 a4 99 0f 3e 87 31 46 0b fd a6 dd 31 14 30 79 9e 2a
+EAP-TLS: Derived Session-Id - hexdump(len=65): 0d 1b c6 dc 49 36 ea e7 50 ee 43 af 5a 6b 08 a7 12 1f 75 2d be 4a 7c 27 a7 63 f1 75 15 16 aa f1 18 3c 63 d0 48 12 47 e8 40 15 9b c1 2e 27 f7 6e 1b 29 32 41 c9 7a 95 c8 9f d7 58 ea 31 5b 6b de 7c
+EAP: method process -> ignore=FALSE methodState=MAY_CONT decision=COND_SUCC eapRespData=0x564f371ed890
+EAP: Session-Id - hexdump(len=65): 0d 1b c6 dc 49 36 ea e7 50 ee 43 af 5a 6b 08 a7 12 1f 75 2d be 4a 7c 27 a7 63 f1 75 15 16 aa f1 18 3c 63 d0 48 12 47 e8 40 15 9b c1 2e 27 f7 6e 1b 29 32 41 c9 7a 95 c8 9f d7 58 ea 31 5b 6b de 7c
+EAP: EAP entering state SEND_RESPONSE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_BE entering state RESPONSE
+EAPOL: txSuppRsp
+TX EAPOL: dst=6c:19:8f:83:c2:80
+TX EAPOL - hexdump(len=1218): 01 00 04 be 02 03 04 be 0d 00 17 03 03 04 05 17 21 a3 1a 26 37 eb 3c e8 fd c6 39 4a 1b 02 4d 83 bd 91 56 03 bd 6b 50 e6 65 d7 ab 3d 4c 49 98 56 2f 2a 2f cc 13 9d d4 b4 45 22 55 23 0d b6 67 74 34 5d 4f b4 8b 63 d9 9d 91 50 fc 7b a3 60 4a 41 6c f5 43 90 1b eb 58 f9 d2 53 cf eb fb 06 df 65 33 8d 28 5c aa 69 07 4d d5 bb ec de bd a0 1a 08 96 e4 c1 91 07 ce 06 4e fb 49 19 cf b7 31 41 2f ae 4b 0e fd c2 86 b8 a2 a8 0b 9f 98 94 37 37 0a 9e 96 98 7c a1 5d ae 5b 1f 93 36 7f c6 e8 24 f2 ea 5b 95 ec cd b9 4d 49 7b 90 14 99 0b 8e 83 ed 4c 68 66 de 3a 3a 4f 54 61 50 03 ac 43 0b 36 52 13 4f 8c 9b cd cf 34 8e 08 cd 2a 9d 42 48 32 f9 d5 b5 31 8c 32 d9 fe 73 cb 9d 00 66 9e 11 28 7c f0 4f 51 21 f2 4e 81 8a 3e 67 f0 e5 d6 e1 45 c3 95 04 16 0c 3e 58 2f 1d 5c b9 19 9e f6 73 91 42 28 a7 57 5e 8a 90 97 4f 90 17 1f 4e d3 68 d0 42 41 11 0b bd d9 cb 21 4a 2b 63 a9 97 7c e4 05 04 fb a3 a2 c2 3c 0f 8e f7 85 4c e4 c7 65 15 dd 1b 3a ab dd 5b de 75 df d9 b0 71 f0 0e 56 08 65 c8 3e 9c c7 e8 8d 60 59 d0 e6 b8 04 b9 1b 81 22 af e6 ad 23 2b 5c f4 29 40 63 f1 bd df 66 b8 69 98 0b 82 e1 50 ef 46 2d 89 8d bb 4d 4f 4c e8 28 ed a4 b3 23 1d c3 c2 be 31 c2 74 95 b5 d2 51 2a 6e c8 bf 41 e0 68 41 cf 85 df e3 c9 05 c0 02 64 83 b8 ac 13 69 0c db e1 b2 82 5d e6 80 17 28 c4 78 15 b1 14 6e 8c 54 78 58 ec 25 51 71 49 6a 23 17 91 f0 f6 2f b0 c4 a0 4b 8a 3a 59 c8 94 7f d6 c5 0f 57 cd 33 7c b6 bf 50 9e 68 d5 79 15 0a 78 38 b5 07 8f 1a 6d 3b df 3f 5a 1a b7 82 33 8a 54 b9 96 08 ef 1b 4b a1 4e a9 6c c3 4c 61 fb b8 f9 29 40 2c a6 35 cc 13 f5 21 fa 8f 83 5b 6a ca 58 ef 09 5a 01 5a bf 06 77 b9 41 96 0a ec 62 34 f0 0c da 31 a3 4c 36 da 5b fb 6d 6f fb aa 8c e0 34 98 82 98 dd 7c 86 da b8 02 84 ca 88 35 ab 1d 0a 83 39 d7 04 61 48 b1 59 4c 7c c7 d7 b7 14 5f 34 5a c3 d7 8e 8e 47 98 a6 a1 f0 e7 bd 17 ce 58 6b 4f 81 a5 2f e7 51 2c e4 9d 95 68 ed 6c b7 08 c3 03 bb aa f8 85 3b 97 a1 b6 94 7c 82 d7 aa e9 79 d1 23 2f 0d 1c df e1 71 4b e3 87 56 03 73 b4 87 62 e3 c2 fe aa 77 df 20 c5 24 2d 36 ce 03 67 a7 59 be c3 8e 72 05 64 11 32 e8 19 c8 21 4e ca f2 43 c7 59 05 79 40 83 db 72 b4 03 1a 94 b5 b7 d4 24 55 83 18 30 80 45 7a 80 08 ab 48 39 bd 70 57 ea 75 76 b7 34 b2 e0 8e 4c e9 f7 31 28 87 94 68 8b ee 46 72 e5 ac 3d 50 93 01 c9 38 df a7 e2 db 89 dd 31 9c ff 31 78 ef dc 94 62 01 c9 2b 4e 33 76 8f e2 d5 be f1 3d fb 7b f1 80 fe 01 91 cd 5f 83 98 de dd c7 e9 5d 1a 5c b8 99 7b c0 1d 13 f5 7b b2 8e 48 f4 ae 63 27 b3 2c 5f 0b dd 45 97 3f 07 dc 81 59 eb 4a 6a ac 2f 63 3e 8b 16 8c 41 20 fb ab e9 3c 7c 64 d9 1e a4 4d 91 5c 3b e1 bd 15 e5 b2 3d dd 69 fc 4f 33 51 e0 d4 e6 d6 d0 68 b9 ef d1 21 87 2c d3 13 27 2e 92 d0 ac d4 23 d8 7b 18 e2 c1 25 8e 44 f3 1b ee 05 d0 54 df ae 98 2d 2f 28 dd ac 84 de 68 e5 3f be 0e c1 e8 d9 ac 0f 20 ad 5e ca 89 37 ba 23 f8 8e ac 56 e8 a3 bb 21 2e 56 6f 36 98 de 1b d3 d2 36 8c e6 80 60 f2 e2 a2 a7 6f 52 5c 9e 60 d3 cf 59 8c 94 db 2c 08 e9 e5 4a 24 28 ac d4 db a8 e2 b4 4c 9a 74 1b 5e 2d 0b 73 68 7d 66 c6 7e 53 27 16 47 40 e4 ec ee 04 0f b5 1c 66 16 23 0a f0 ba 0b dc f3 d5 87 dc 0a 20 49 3c bb e7 6a 66 cd ac 7a bc 07 0c 7c 2c ec 19 af 46 43 58 6a 9b 73 10 35 ac fa ca 73 d1 c0 1e b7 6d e6 48 42 e7 b8 e5 e8 29 d6 db 7c dd 93 55 ee 2b f6 e3 17 03 03 00 5f 07 6c 9e 4b 49 d1 fe 8d 7d c8 f5 3f a6 75 a4 3c a6 5f c6 22 c5 40 98 0c 39 81 57 76 40 4e b4 46 28 72 ae 5d 87 25 bf 4d 62 28 0c 2a d8 56 80 b0 0f 80 27 33 75 b0 42 89 7c 6c 8d c1 e0 25 89 ed 5a 13 f0 99 12 03 79 45 c2 c9 f6 6b 4f ac 3d 5a 3a 67 26 d5 e0 82 42 62 8c 2b a5 49 88 61 a1 17 03 03 00 45 65 91 23 3b 3b a1 78 f3 bf cd 6e cf 3e 50 a9 d9 2c c8 ba 15 77 a8 a9 d0 31 9b 49 f8 ba 60 91 c0 5a 24 e4 15 0a ba 9c 28 81 59 06 5b f8 72 a9 e5 d1 de c4 2d d5 b1 bc 6b e0 7e a6 8d 28 59 5e b7 68 5e 7f dd 64
+EAPOL: SUPP_BE entering state RECEIVE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=191
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=191): 01 00 00 bb 01 04 00 bb 0d 00 17 03 03 00 4a 86 88 44 3c dd cf 85 fe 6c 32 85 65 c4 51 98 de 2a d0 82 88 53 f7 b2 f7 40 53 09 b0 bc e0 24 aa 56 1e ce 7b 67 50 97 d8 6b 54 67 6c 9a 36 31 b8 0e 98 ac c3 d3 85 7f 55 24 03 ac 45 ad da 1e 1f f1 12 d7 2f b4 c9 9f d6 af 03 17 03 03 00 4a 90 27 98 80 bf 36 1f 76 c0 6f 5f e2 95 1c bc 94 1e f0 1d 85 95 74 fc 9d 13 94 5f 00 4d 8d 14 6c 54 2f 93 bd a1 cc ae 37 c4 2c c0 59 31 4d 8d b6 a4 da ca 22 c8 14 cf da c4 26 79 82 78 59 fd 50 15 15 83 40 5c 54 2c 98 21 4f 17 03 03 00 12 8a bf b1 b6 c9 d0 69 8e 6f be f4 44 a3 36 a2 71 34 9e
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Request id=4 method=13 vendor=0 vendorMethod=0
+EAP: EAP entering state METHOD
+SSL: Received packet(len=187) - Flags 0x00
+SSL: 0 bytes pending from ssl_out
+OpenSSL: Handshake finished - resumed=0
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 4a
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSL negotiation finished successfully
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSL negotiation finished successfully
+OpenSSL: RX ver=0x304 content_type=22 (handshake/new session ticket)
+OpenSSL: Message - hexdump(len=57): 04 00 00 35 00 00 1c 20 6f e5 ae 2a 08 00 00 00 00 00 00 00 00 00 20 e5 e9 e9 9b 15 2e f5 04 0a 4f d0 86 5e 41 dc 7e 4e b1 ae 7b af 48 78 f8 09 a9 a0 d7 e1 45 71 4c 00 00
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read server session ticket
+SSL: (where=0x1002 ret=0x1)
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 4a
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/handshake)
+OpenSSL: Message - hexdump(len=1): 16
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSL negotiation finished successfully
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSL negotiation finished successfully
+OpenSSL: RX ver=0x304 content_type=22 (handshake/new session ticket)
+OpenSSL: Message - hexdump(len=57): 04 00 00 35 00 00 1c 20 71 49 d3 af 08 00 00 00 00 00 00 00 01 00 20 1d 12 92 64 04 b3 ba a6 ac d1 7e a2 73 03 80 ae 7b 7e 9d 5e a8 f4 1b c7 d0 9c ad b0 cc 44 6f 24 00 00
+SSL: (where=0x1001 ret=0x1)
+SSL: SSL_connect:SSLv3/TLS read server session ticket
+SSL: (where=0x1002 ret=0x1)
+OpenSSL: RX ver=0x0 content_type=256 (TLS header info/)
+OpenSSL: Message - hexdump(len=5): 17 03 03 00 12
+OpenSSL: RX ver=0x304 content_type=257 (inner content type/application data)
+OpenSSL: Message - hexdump(len=1): 17
+SSL: Application Data in Finished message - hexdump(len=1): 00
+SSL: Application data - hexdump(len=1): 00
+EAP-TLS: Received Application Data - hexdump(len=1): 00
+EAP-TLS: Remaining tls_out data - hexdump(len=0):
+EAP-TLS: Done
+EAP-TLS: Derived key - hexdump(len=64): c0 19 f6 d2 2c ba e5 8e 26 64 70 b5 a3 d4 8f df 24 93 a8 36 64 40 da eb 30 18 f1 b9 64 c9 27 f2 9f c2 d5 00 51 6d 6e ea 36 5e 57 c2 26 9e 64 71 10 eb c8 6a 57 4a 19 e8 db a9 b2 ea 21 76 ae 94
+EAP-TLS: Derived EMSK - hexdump(len=64): 11 bb cb 75 a8 05 65 c9 7a ca a8 7c 06 c9 e9 52 54 34 5e 36 4f d6 1f b9 a4 b1 60 20 2c 2a ed 4f 57 42 90 f3 75 71 a8 25 1c 98 66 a3 9d 9d b0 a4 99 0f 3e 87 31 46 0b fd a6 dd 31 14 30 79 9e 2a
+EAP-TLS: Derived Session-Id - hexdump(len=65): 0d 1b c6 dc 49 36 ea e7 50 ee 43 af 5a 6b 08 a7 12 1f 75 2d be 4a 7c 27 a7 63 f1 75 15 16 aa f1 18 3c 63 d0 48 12 47 e8 40 15 9b c1 2e 27 f7 6e 1b 29 32 41 c9 7a 95 c8 9f d7 58 ea 31 5b 6b de 7c
+SSL: Building ACK (type=13 id=4 ver=0)
+EAP: method process -> ignore=FALSE methodState=MAY_CONT decision=COND_SUCC eapRespData=0x564f371f0c70
+EAP: Session-Id - hexdump(len=65): 0d 1b c6 dc 49 36 ea e7 50 ee 43 af 5a 6b 08 a7 12 1f 75 2d be 4a 7c 27 a7 63 f1 75 15 16 aa f1 18 3c 63 d0 48 12 47 e8 40 15 9b c1 2e 27 f7 6e 1b 29 32 41 c9 7a 95 c8 9f d7 58 ea 31 5b 6b de 7c
+EAP: EAP entering state SEND_RESPONSE
+EAP: EAP entering state IDLE
+EAPOL: SUPP_BE entering state RESPONSE
+EAPOL: txSuppRsp
+TX EAPOL: dst=6c:19:8f:83:c2:80
+TX EAPOL - hexdump(len=10): 01 00 00 06 02 04 00 06 0d 00
+EAPOL: SUPP_BE entering state RECEIVE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=8
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=8): 01 00 00 04 03 04 00 04
+EAPOL: Received EAP-Packet frame
+EAPOL: SUPP_BE entering state REQUEST
+EAPOL: getSuppRsp
+EAP: EAP entering state RECEIVED
+EAP: Received EAP-Success
+EAP: Status notification: completion (param=success)
+EAP: EAP entering state SUCCESS
+wlp2s0: CTRL-EVENT-EAP-SUCCESS EAP authentication completed successfully
+EAPOL: SUPP_BE entering state RECEIVE
+EAPOL: SUPP_BE entering state SUCCESS
+EAPOL: SUPP_BE entering state IDLE
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=99
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=99): 01 03 00 5f 02 00 8a 00 10 00 00 00 00 00 00 00 00 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+EAPOL: Ignoring WPA EAPOL-Key frame in EAPOL state machines
+wlp2s0: IEEE 802.1X RX: version=1 type=3 length=95
+WPA: RX EAPOL-Key - hexdump(len=99): 01 03 00 5f 02 00 8a 00 10 00 00 00 00 00 00 00 00 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+wlp2s0:   EAPOL-Key type=2
+wlp2s0:   key_info 0x8a (ver=2 keyidx=0 rsvd=0 Pairwise Ack)
+wlp2s0:   key_length=16 key_data_length=0
+  replay_counter - hexdump(len=8): 00 00 00 00 00 00 00 00
+  key_nonce - hexdump(len=32): 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2
+  key_iv - hexdump(len=16): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  key_rsc - hexdump(len=8): 00 00 00 00 00 00 00 00
+  key_id (reserved) - hexdump(len=8): 00 00 00 00 00 00 00 00
+  key_mic - hexdump(len=16): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+wlp2s0: State: ASSOCIATED -> 4WAY_HANDSHAKE
+wlp2s0: WPA: RX message 1 of 4-Way Handshake from 6c:19:8f:83:c2:80 (ver=2)
+RSN: msg 1/4 key data - hexdump(len=0):
+EAPOL: Successfully fetched key (len=32)
+WPA: PMK from EAPOL state machines - hexdump(len=32): c0 19 f6 d2 2c ba e5 8e 26 64 70 b5 a3 d4 8f df 24 93 a8 36 64 40 da eb 30 18 f1 b9 64 c9 27 f2
+RSN: Derive PMKID using HMAC-SHA-1
+RSN: Derived PMKID - hexdump(len=16): a3 24 aa e4 70 94 08 a6 d7 9f c3 43 70 bc 5d ad
+RSN: Added PMKSA cache entry for 6c:19:8f:83:c2:80 network_ctx=0x564f371a3110 akmp=0x1
+wlp2s0: PMKSA-CACHE-ADDED 6c:19:8f:83:c2:80 0
+nl80211: Add PMKID for 6c:19:8f:83:c2:80
+nl80211: NL80211_CMD_SET_PMKSA failed: -95 (Operation not supported)
+Get randomness: len=32 entropy=11
+random from os_get_random - hexdump(len=32): 7e ff 89 fe c8 dc 6a 74 da ef 4e f6 5c 50 16 74 ef a2 b4 e4 4d 10 3f 19 ce d4 44 f6 8c af 90 e8
+random_mix_pool - hexdump(len=20): 64 da f4 e9 42 0d fd 44 34 c3 7c 64 9f 9b 86 aa ba 02 3d db
+random from internal pool - hexdump(len=16): 32 a9 7e 67 e4 f3 9e 7c 82 87 1b fb b8 b9 c8 ac
+random_mix_pool - hexdump(len=20): 47 60 74 b0 87 d3 e5 37 61 79 0f 43 2d 22 c0 ed dd 2e d3 0e
+random from internal pool - hexdump(len=16): fe 1b d4 e2 00 c2 a9 1f 69 20 97 1e 8d 86 61 6f
+mixed random - hexdump(len=32): 4c 56 f7 99 2c 2f f4 08 58 68 55 0d e4 e9 de d8 11 b9 60 06 4d d2 96 06 a7 f4 d3 e8 01 29 f1 87
+WPA: Renewed SNonce - hexdump(len=32): 4c 56 f7 99 2c 2f f4 08 58 68 55 0d e4 e9 de d8 11 b9 60 06 4d d2 96 06 a7 f4 d3 e8 01 29 f1 87
+WPA: PTK derivation using PRF(SHA1)
+WPA: PTK derivation - A1=28:16:ad:c7:03:b2 A2=6c:19:8f:83:c2:80
+WPA: Nonce1 - hexdump(len=32): 4c 56 f7 99 2c 2f f4 08 58 68 55 0d e4 e9 de d8 11 b9 60 06 4d d2 96 06 a7 f4 d3 e8 01 29 f1 87
+WPA: Nonce2 - hexdump(len=32): 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2
+WPA: PMK - hexdump(len=32): c0 19 f6 d2 2c ba e5 8e 26 64 70 b5 a3 d4 8f df 24 93 a8 36 64 40 da eb 30 18 f1 b9 64 c9 27 f2
+WPA: PTK - hexdump(len=48): eb 3e 41 4c e5 23 42 63 a2 12 7d 50 df a7 22 4e 46 8d 30 66 a3 93 9d 85 05 3b 8f 44 fe 51 7a 57 16 79 76 a3 f6 22 b4 d5 5f 37 0c 3a 77 12 5a f3
+WPA: KCK - hexdump(len=16): eb 3e 41 4c e5 23 42 63 a2 12 7d 50 df a7 22 4e
+WPA: KEK - hexdump(len=16): 46 8d 30 66 a3 93 9d 85 05 3b 8f 44 fe 51 7a 57
+WPA: TK - hexdump(len=16): 16 79 76 a3 f6 22 b4 d5 5f 37 0c 3a 77 12 5a f3
+WPA: WPA IE for msg 2/4 - hexdump(len=22): 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00
+WPA: Replay Counter - hexdump(len=8): 00 00 00 00 00 00 00 00
+wlp2s0: WPA: Sending EAPOL-Key 2/4
+WPA: Send EAPOL-Key frame to 6c:19:8f:83:c2:80 ver=2 mic_len=16 key_mgmt=0x1
+WPA: EAPOL-Key MIC using HMAC-SHA1
+WPA: KCK - hexdump(len=16): eb 3e 41 4c e5 23 42 63 a2 12 7d 50 df a7 22 4e
+WPA: Derived Key MIC - hexdump(len=16): b9 cf 99 f8 5b 69 a9 99 17 b2 b2 5b 8c c9 f6 2f
+WPA: TX EAPOL-Key - hexdump(len=121): 01 03 00 75 02 01 0a 00 00 00 00 00 00 00 00 00 00 4c 56 f7 99 2c 2f f4 08 58 68 55 0d e4 e9 de d8 11 b9 60 06 4d d2 96 06 a7 f4 d3 e8 01 29 f1 87 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b9 cf 99 f8 5b 69 a9 99 17 b2 b2 5b 8c c9 f6 2f 00 16 30 14 01 00 00 0f ac 02 01 00 00 0f ac 04 01 00 00 0f ac 01 00 00
+l2_packet_receive: src=6c:19:8f:83:c2:80 len=203
+wlp2s0: RX EAPOL from 6c:19:8f:83:c2:80
+RX EAPOL - hexdump(len=203): 01 03 00 c7 02 13 ca 00 10 00 00 00 00 00 00 00 01 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9d cf 0c 32 54 f0 4e 10 cc 01 7f ba 42 bd 09 18 00 68 39 56 a8 0c 21 b7 23 f5 17 ec c2 d0 47 90 5e 0c 0e 54 21 e5 2d 8e 77 ca 04 34 6a 76 85 b4 28 69 1b f9 33 8b cc 81 8c 1b 96 52 3d 24 25 6a 62 83 80 ea a3 08 76 a4 be e2 f5 bf c6 b3 3f 23 86 a3 ea 75 77 b5 6b 07 95 11 7a 1f cf 17 5d 44 35 88 f8 57 db 2f 8d 45 de e7 f5 1f fe 08 15 5d 0d 76 41 0b ea 79 a8 fa c6 80
+EAPOL: Ignoring WPA EAPOL-Key frame in EAPOL state machines
+wlp2s0: IEEE 802.1X RX: version=1 type=3 length=199
+WPA: RX EAPOL-Key - hexdump(len=203): 01 03 00 c7 02 13 ca 00 10 00 00 00 00 00 00 00 01 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9d cf 0c 32 54 f0 4e 10 cc 01 7f ba 42 bd 09 18 00 68 39 56 a8 0c 21 b7 23 f5 17 ec c2 d0 47 90 5e 0c 0e 54 21 e5 2d 8e 77 ca 04 34 6a 76 85 b4 28 69 1b f9 33 8b cc 81 8c 1b 96 52 3d 24 25 6a 62 83 80 ea a3 08 76 a4 be e2 f5 bf c6 b3 3f 23 86 a3 ea 75 77 b5 6b 07 95 11 7a 1f cf 17 5d 44 35 88 f8 57 db 2f 8d 45 de e7 f5 1f fe 08 15 5d 0d 76 41 0b ea 79 a8 fa c6 80
+wlp2s0:   EAPOL-Key type=2
+wlp2s0:   key_info 0x13ca (ver=2 keyidx=0 rsvd=0 Pairwise Install Ack MIC Secure Encr)
+wlp2s0:   key_length=16 key_data_length=104
+  replay_counter - hexdump(len=8): 00 00 00 00 00 00 00 01
+  key_nonce - hexdump(len=32): 0b 94 e4 6b 10 79 29 bd 07 37 8f 70 c8 ac 20 e2 9c 50 d2 05 bb b8 f1 8c f9 eb 39 68 b2 ef 09 a2
+  key_iv - hexdump(len=16): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  key_rsc - hexdump(len=8): 2b 00 00 00 00 00 00 00
+  key_id (reserved) - hexdump(len=8): 00 00 00 00 00 00 00 00
+  key_mic - hexdump(len=16): 9d cf 0c 32 54 f0 4e 10 cc 01 7f ba 42 bd 09 18
+WPA: EAPOL-Key MIC using HMAC-SHA1
+RSN: encrypted key data - hexdump(len=104): 39 56 a8 0c 21 b7 23 f5 17 ec c2 d0 47 90 5e 0c 0e 54 21 e5 2d 8e 77 ca 04 34 6a 76 85 b4 28 69 1b f9 33 8b cc 81 8c 1b 96 52 3d 24 25 6a 62 83 80 ea a3 08 76 a4 be e2 f5 bf c6 b3 3f 23 86 a3 ea 75 77 b5 6b 07 95 11 7a 1f cf 17 5d 44 35 88 f8 57 db 2f 8d 45 de e7 f5 1f fe 08 15 5d 0d 76 41 0b ea 79 a8 fa c6 80
+WPA: Decrypt Key Data using AES-UNWRAP (KEK length 16)
+WPA: decrypted EAPOL-Key key data - hexdump(len=96): 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00 dd 26 00 0f ac 01 02 00 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 ca ab f6 95 22 b9 43 ad 64 b5 17 46 ee 7f 57 3e
+wlp2s0: State: 4WAY_HANDSHAKE -> 4WAY_HANDSHAKE
+wlp2s0: WPA: RX message 3 of 4-Way Handshake from 6c:19:8f:83:c2:80 (ver=2)
+WPA: IE KeyData - hexdump(len=96): 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00 dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00 dd 26 00 0f ac 01 02 00 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 ca ab f6 95 22 b9 43 ad 64 b5 17 46 ee 7f 57 3e
+WPA: RSN IE in EAPOL-Key - hexdump(len=26): 30 18 01 00 00 0f ac 02 02 00 00 0f ac 04 00 0f ac 02 01 00 00 0f ac 01 0d 00
+WPA: WPA IE in EAPOL-Key - hexdump(len=30): dd 1c 00 50 f2 01 01 00 00 50 f2 02 02 00 00 50 f2 04 00 50 f2 02 01 00 00 50 f2 01 0c 00
+WPA: GTK in EAPOL-Key - hexdump(len=40): dd 26 00 0f ac 01 02 00 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 ca ab f6 95 22 b9 43 ad 64 b5 17 46 ee 7f 57 3e
+wlp2s0: WPA: Sending EAPOL-Key 4/4
+WPA: Send EAPOL-Key frame to 6c:19:8f:83:c2:80 ver=2 mic_len=16 key_mgmt=0x1
+WPA: EAPOL-Key MIC using HMAC-SHA1
+WPA: KCK - hexdump(len=16): eb 3e 41 4c e5 23 42 63 a2 12 7d 50 df a7 22 4e
+WPA: Derived Key MIC - hexdump(len=16): ba 39 51 bd 6d e0 da d8 c5 c2 b2 fc 99 56 a2 e5
+WPA: TX EAPOL-Key - hexdump(len=99): 01 03 00 5f 02 03 0a 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ba 39 51 bd 6d e0 da d8 c5 c2 b2 fc 99 56 a2 e5 00 00
+wlp2s0: WPA: Installing PTK to the driver
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=3 addr=0x564f371a3c88 key_idx=0 set_tx=1 seq_len=6 key_len=16
+nl80211: KEY_DATA - hexdump(len=16): 16 79 76 a3 f6 22 b4 d5 5f 37 0c 3a 77 12 5a f3
+nl80211: KEY_SEQ - hexdump(len=6): 00 00 00 00 00 00
+   addr=6c:19:8f:83:c2:80
+EAPOL: External notification - portValid=1
+EAPOL: SUPP_PAE entering state AUTHENTICATED
+EAPOL: Supplicant port status: Authorized
+nl80211: Set supplicant port authorized for 6c:19:8f:83:c2:80
+EAPOL authentication completed - result=SUCCESS
+wlp2s0: State: 4WAY_HANDSHAKE -> GROUP_HANDSHAKE
+RSN: received GTK in pairwise handshake - hexdump(len=34): 02 00 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 ca ab f6 95 22 b9 43 ad 64 b5 17 46 ee 7f 57 3e
+WPA: Group Key - hexdump(len=32): 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 ca ab f6 95 22 b9 43 ad 64 b5 17 46 ee 7f 57 3e
+wlp2s0: WPA: Installing GTK to the driver (keyidx=2 tx=0 len=32)
+WPA: RSC - hexdump(len=6): 2b 00 00 00 00 00
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=2 addr=0x564f360d5d79 key_idx=2 set_tx=0 seq_len=6 key_len=32
+nl80211: KEY_DATA - hexdump(len=32): 8d 58 94 b9 44 e7 ab 5f 45 5e 85 2d e4 5e ec 97 64 b5 17 46 ee 7f 57 3e ca ab f6 95 22 b9 43 ad
+nl80211: KEY_SEQ - hexdump(len=6): 2b 00 00 00 00 00
+   broadcast key
+wlp2s0: WPA: Key negotiation completed with 6c:19:8f:83:c2:80 [PTK=CCMP GTK=TKIP]
+wlp2s0: Cancelling authentication timeout
+wlp2s0: State: GROUP_HANDSHAKE -> COMPLETED
+wlp2s0: Radio work 'sme-connect'@0x564f371cd240 done in 0.210468 seconds
+wlp2s0: radio_work_free('sme-connect'@0x564f371cd240): num_active_works --> 0
+wlp2s0: CTRL-EVENT-CONNECTED - Connection to 6c:19:8f:83:c2:80 completed [id=0 id_str=]
+nl80211: Set wlp2s0 operstate 0->1 (UP)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=6 (IF_OPER_UP)
+EAPOL: External notification - portValid=1
+nl80211: Set rekey offload
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 operstate=6 linkmode=1 ifi_family=0 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+wlp2s0: RSN: processing PMKSA candidate list
+wlp2s0: RSN: PMKSA candidate 6c:19:8f:83:c2:80 does not need pre-authentication anymore
+nl80211: Add PMKID for 6c:19:8f:83:c2:80
+nl80211: NL80211_CMD_SET_PMKSA failed: -95 (Operation not supported)
+wlp2s0: RSN: no more pending PMKSA candidates
+EAPOL: startWhen --> 0
+wlp2s0: Removing interface wlp2s0
+wlp2s0: Request to deauthenticate - bssid=6c:19:8f:83:c2:80 pending_bssid=00:00:00:00:00:00 reason=3 (DEAUTH_LEAVING) state=COMPLETED
+wpa_driver_nl80211_deauthenticate(addr=6c:19:8f:83:c2:80 reason_code=3)
+wlp2s0: Event DEAUTH (11) received
+wlp2s0: Deauthentication notification
+wlp2s0:  * reason 3 (DEAUTH_LEAVING) locally_generated=1
+Deauthentication frame IE(s) - hexdump(len=0): [NULL]
+wlp2s0: CTRL-EVENT-DISCONNECTED bssid=6c:19:8f:83:c2:80 reason=3 locally_generated=1
+wlp2s0: Auto connect disabled: do not try to re-connect
+wlp2s0: Ignore connection failure indication since interface has been put into disconnected state
+wlp2s0: WPA: Clear old PMK and PTK
+wlp2s0: Disconnect event - remove keys
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=0x564f371a0cf8 key_idx=0 set_tx=0 seq_len=0 key_len=0
+   addr=6c:19:8f:83:c2:80
+wlp2s0: State: COMPLETED -> DISCONNECTED
+nl80211: Set wlp2s0 operstate 1->0 (DORMANT)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=5 (IF_OPER_DORMANT)
+WMM AC: WMM AC is disabled
+EAPOL: External notification - portEnabled=0
+EAPOL: SUPP_PAE entering state DISCONNECTED
+EAPOL: Supplicant port status: Unauthorized
+nl80211: Skip set_supp_port(unauthorized) while not associated
+EAPOL: SUPP_BE entering state INITIALIZE
+EAP: EAP entering state DISABLED
+EAPOL: External notification - portValid=0
+wlp2s0: State: DISCONNECTED -> DISCONNECTED
+nl80211: Set wlp2s0 operstate 0->0 (DORMANT)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=5 (IF_OPER_DORMANT)
+EAPOL: External notification - portEnabled=0
+EAPOL: External notification - portValid=0
+RSN: Flush PMKSA cache entry for 6c:19:8f:83:c2:80
+wlp2s0: PMKSA-CACHE-REMOVED 6c:19:8f:83:c2:80 0
+nl80211: Delete PMKID for 6c:19:8f:83:c2:80
+nl80211: NL80211_CMD_DEL_PMKSA failed: -95 (Operation not supported)
+wlp2s0: RSN: PMKSA cache entry free_cb: 6c:19:8f:83:c2:80 reason=0
+EAP: deinitialize previously used EAP method (13, TLS) at EAP deinit
+wlp2s0: WPA: Clear old PMK and PTK
+wlp2s0: BSS: Remove id 0 BSSID 6c:19:8f:83:c2:80 SSID 'NOOBLABS' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 1 BSSID 6c:19:8f:83:c2:81 SSID 'NOOBLABS_PERSONAL' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 2 BSSID f4:db:e6:86:db:ac SSID 'Comnet_free' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 3 BSSID f4:db:e6:86:db:af SSID 'aalto' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 4 BSSID f4:db:e6:86:db:ad SSID 'eduroam' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 5 BSSID f4:db:e6:86:db:ab SSID '\x00\x00\x00\x00\x00\x00\x00\x00' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 6 BSSID 94:10:3e:8c:e2:4f SSID 'iot' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 7 BSSID 6c:19:8f:83:c2:90 SSID 'noob2' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 8 BSSID 70:0f:6a:09:35:4f SSID 'aalto' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 9 BSSID 70:0f:6a:09:35:4d SSID 'eduroam' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 10 BSSID 10:c3:7b:44:44:b8 SSID 'iot_monitoring' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 11 BSSID 1c:5f:2b:a0:7a:d4 SSID 'dlink-a07ad4' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 12 BSSID f4:db:e6:86:db:ae SSID 'aalto open' due to wpa_bss_flush
+wlp2s0: BSS: Remove id 13 BSSID 70:0f:6a:09:35:4e SSID 'aalto open' due to wpa_bss_flush
+wlp2s0: Cancelling delayed sched scan
+wlp2s0: Cancelling scan request
+wlp2s0: Cancelling authentication timeout
+Remove interface wlp2s0 from radio phy0
+Remove radio phy0
+nl80211: deinit ifname=wlp2s0 disabled_11b_rates=0
+nl80211: Remove monitor interface: refcount=0
+netlink: Operstate: ifindex=3 linkmode=0 (kernel-control), operstate=6 (IF_OPER_UP)
+nl80211: Set mode ifindex 3 iftype 2 (STATION)
+nl80211: Unsubscribe mgmt frames handle 0x8888dec7bf92a239 (mode change)
+wlp2s0: CTRL-EVENT-TERMINATING 
